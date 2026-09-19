@@ -28,12 +28,26 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
     
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MJSRD665');</script>
+    <!-- Google Tag Manager (odloženo do prve interakcije ili 8 s posle učitavanja, da ne blokira stranicu) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+(function () {
+  var loaded = false;
+  var events = ['scroll', 'mousemove', 'touchstart', 'keydown', 'pointerdown'];
+  function loadGtm() {
+    if (loaded) return;
+    loaded = true;
+    events.forEach(function (e) { window.removeEventListener(e, loadGtm); });
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-MJSRD665';
+    document.head.appendChild(s);
+  }
+  events.forEach(function (e) { window.addEventListener(e, loadGtm, { passive: true }); });
+  window.addEventListener('load', function () { setTimeout(loadGtm, 8000); });
+})();
+</script>
 <!-- End Google Tag Manager -->
 </head>
 <body>
