@@ -12,23 +12,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="logos/favicon-domace-logo-16w.png">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
-    <!-- Add Google Fonts for Lora and DM Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Great+Vibes&family=Lora:wght@600&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/google/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/google/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/google/great-vibes-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts/fonts.css">
     
     <!-- CSS (možete koristiti isti CSS kao na glavnom sajtu) -->
     <style>
         @font-face {
   font-family: lexend;
-  src: url(fonts/Lexend/LexendZetta-Light.ttf);
+  src: url(/fonts/Lexend/LexendZetta-Light.woff2) format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: mrs_saint;
-  src: url(fonts/Mrs_Saint_Delafield/MrsSaintDelafield-Regular.ttf);
+  src: url(/fonts/Mrs_Saint_Delafield/MrsSaintDelafield-Regular.woff2) format("woff2");
+  font-display: swap;
 }
 
 * {
@@ -204,15 +203,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         <div class="product-grid">
             <div class="product-card">
-                <img src="slike/domace-kiflice-novi-beograd-1.jpg" alt="Domaće kiflice sa sirom">
+                <img src="slike/domace-kiflice-novi-beograd-1.jpg" width="600" height="400" alt="Domaće kiflice sa sirom">
                 <h3>Kiflice sa sirom</h3>
             </div>
             <div class="product-card">
-                <img src="slike/strudla-sa-makom-2.jpg" alt="Štrudla sa makom">
+                <img src="slike/strudla-sa-makom-2.jpg" width="600" height="400" alt="Štrudla sa makom">
                 <h3>Štrudla sa makom</h3>
             </div>
             <div class="product-card">
-                <img src="slike/strudla-sa-orasima-1.jpg" alt="Štrudla sa orasima">
+                <img src="slike/strudla-sa-orasima-1.jpg" width="600" height="400" alt="Štrudla sa orasima">
                 <h3>Štrudla sa orasima</h3>
             </div>
         </div>

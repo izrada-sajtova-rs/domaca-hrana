@@ -3,14 +3,7 @@
 * Version: 1.0
 * Last updated: 2025-03-10
 */
-@font-face {
-  font-family: lexend;
-  src: url(fonts/Lexend/LexendZetta-Light.ttf);
-}
-@font-face {
-  font-family: mrs_saint;
-  src: url(fonts/Mrs_Saint_Delafield/MrsSaintDelafield-Regular.ttf);
-}
+/* Fontovi "lexend" i "mrs_saint" (potpis u footeru) se učitavaju iz script.js kad footer priđe ekranu */
 
 /* ===== VARIABLES ===== */
 :root {
@@ -778,7 +771,7 @@ copyright a {
 }
 .copyright .designed11 {
   font-size: 12px;
-  font-family: lexend;
+  font-family: lexend, sans-serif;
   width: 100%;
   display: flex;
   align-items: center;
@@ -794,7 +787,7 @@ copyright a {
 }
 .copyright .designed11 span {
   font-size: 30px;
-  font-family: mrs_saint;
+  font-family: mrs_saint, cursive;
   text-align: center;
   color: gold;
   transition: 0.5s;
@@ -1576,7 +1569,12 @@ html {
   position: absolute;
   translate: var(--xpos) var(--ypos);
   transform-origin: center center;
+  opacity: 0; /* postaje vidljiv (.active) tek kad script.js pokrene kursor na prvi pokret miša */
   transition: width 0.2s ease-in-out, height 0.2s ease-in-out, border-radius 0.4s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+#circle.active {
+  opacity: 1;
 }
 
 

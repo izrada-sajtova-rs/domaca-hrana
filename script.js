@@ -22,53 +22,38 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Counters Animation
+  // Counters Animation - pokreće se jednom, kad sekcija uđe u vidno polje
   const counters = document.querySelectorAll(".counter");
-  const speed = 200; // The lower the slower
+  const counterSection = document.querySelector(".counter-section");
 
   const animateCounters = () => {
-    counters.forEach((counter) => {
-      const target = +counter.getAttribute("data-count");
-      const count = +counter.innerText;
+    const duration = 1500; // ms
+    const start = performance.now();
 
-      // Lower inc to slow and higher to speed up
-      const inc = target / speed;
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      counters.forEach((counter) => {
+        counter.innerText = Math.round(+counter.getAttribute("data-count") * progress);
+      });
+      if (progress < 1) requestAnimationFrame(step);
+    };
 
-      if (count < target) {
-        counter.innerText = Math.ceil(count + inc);
-        setTimeout(animateCounters, 1);
-      } else {
-        counter.innerText = target;
-      }
-    });
+    requestAnimationFrame(step);
   };
 
-  // Check if element is in viewport
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  // Start counter animation when counter section is in viewport
-  const counterSection = document.querySelector(".counter-section");
-  if (counterSection) {
-    window.addEventListener("scroll", () => {
-      if (isInViewport(counterSection)) {
-        animateCounters();
-      }
-    });
-
-    // Check on load as well
-    if (isInViewport(counterSection)) {
+  if (counterSection && counters.length > 0) {
+    if ("IntersectionObserver" in window) {
+      const counterObserver = new IntersectionObserver((entries, obs) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          animateCounters();
+          obs.disconnect();
+        }
+      }, { threshold: 0.3 });
+      counterObserver.observe(counterSection);
+    } else {
       animateCounters();
     }
   }
-
   // Testimonials Slider
   const testimonialSlider = document.querySelector(".testimonials-slider");
   const testimonialSlides = document.querySelectorAll(".testimonial-slide");
@@ -136,40 +121,43 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(currentSlide);
   }
 
-  // Scroll Animation
-  const animateOnScroll = () => {
-    const elements = document.querySelectorAll(".product-card, .about-content, .about-image, .delivery-card, .partner, .price-categories, .price-tables, .price-notes, .order-cta, .product-content, .product-variants, .product-gallery, .ingredients-section, .order-info, .testimonials-section, .story-section, .values-section, .process-step, .faq-item, .map-section, .contact-section");
+  // Scroll Animation - IntersectionObserver umesto scroll listenera (bez stalnog čitanja layouta)
+  const animatedElements = document.querySelectorAll(".product-card, .about-content, .about-image, .delivery-card, .partner, .price-categories, .price-tables, .price-notes, .order-cta, .product-content, .product-variants, .product-gallery, .ingredients-section, .order-info, .testimonials-section, .story-section, .values-section, .process-step, .faq-item, .map-section, .contact-section");
 
-    elements.forEach((element) => {
-      const elementPosition = element.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight;
-
-      if (elementPosition < screenPosition) {
-        element.classList.add("fade-in");
-      }
+  if ("IntersectionObserver" in window) {
+    const fadeObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        // Elementi iznad ekrana (npr. posle osvežavanja na sredini stranice) se takođe prikazuju
+        if (entry.isIntersecting || entry.boundingClientRect.top < 0) {
+          entry.target.classList.add("fade-in");
+          obs.unobserve(entry.target);
+        }
+      });
     });
-  };
-
-  window.addEventListener("scroll", animateOnScroll);
-  animateOnScroll(); // Check on load
-
+    animatedElements.forEach((el) => fadeObserver.observe(el));
+  } else {
+    animatedElements.forEach((el) => el.classList.add("fade-in"));
+  }
   // Music Toggle
   const musicToggle = document.querySelector(".music-toggle");
   let audio = null;
   let isPlaying = false;
 
   if (musicToggle) {
-    // Create audio element
-    audio = document.createElement("audio");
-    audio.src = "mp3/domace.mp3"; // Replace with actual music file
-    audio.loop = true;
-
+    // Audio element se pravi tek na prvi klik, da se mp3 ne preuzima pri učitavanju stranice
     musicToggle.addEventListener("click", () => {
+      if (!audio) {
+        audio = document.createElement("audio");
+        audio.preload = "none";
+        audio.loop = true;
+        audio.src = "mp3/domace.mp3";
+      }
+
       if (isPlaying) {
         audio.pause();
         musicToggle.querySelector(".music-icon").innerHTML = '<i class="fas fa-music"></i>';
       } else {
-        audio.play();
+        audio.play().catch(() => {});
         musicToggle.querySelector(".music-icon").innerHTML = '<i class="fas fa-volume-up"></i>';
       }
       isPlaying = !isPlaying;
@@ -254,42 +242,43 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // INTERACTIVE CURSOR
-  const $context = document.querySelector("body");
+  // Pokreće se tek na prvi pokret miša (ne na dodir/telefonu), da ne opterećuje učitavanje stranice
   const $circle = document.querySelector("#circle");
-  const $divs = document.querySelectorAll(".interactive .interactive-div");
-  const interactive = document.querySelector(".interactive");
+  const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
-  let targetX = 0;
-  let targetY = 0;
-  let currentX = 0;
-  let currentY = 0;
-  let onDiv = false;
-  let hoveringDiv = null;
-  const easing = 0.1;
+  if ($circle && canHover) {
+    const $context = document.body;
+    const $divs = document.querySelectorAll(".interactive .interactive-div");
 
-  // Praćenje miša
-  $context.addEventListener('pointermove', (evt) => {
-    if (!onDiv) {
-      const scrollOffsetY = window.scrollY;
-      targetX = evt.clientX - $circle.offsetWidth / 2;
-      targetY = evt.clientY + scrollOffsetY - $circle.offsetHeight / 2;
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let onDiv = false;
+    let hoveringDiv = null;
+    let rafId = null;
+    const easing = 0.1;
+
+    function animateCircle() {
+      currentX += (targetX - currentX) * easing;
+      currentY += (targetY - currentY) * easing;
+
+      $circle.style.setProperty("--xpos", `${currentX}px`);
+      $circle.style.setProperty("--ypos", `${currentY}px`);
+
+      // Petlja se zaustavlja kad krug stigne na cilj, i ponovo pokreće na sledeći pokret
+      if (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1) {
+        rafId = requestAnimationFrame(animateCircle);
+      } else {
+        rafId = null;
+      }
     }
-  }, { passive: true });
-  
-  function animateCircle() {
-    currentX += (targetX - currentX) * easing;
-    currentY += (targetY - currentY) * easing;
 
-    $circle.style.setProperty("--xpos", `${currentX}px`);
-    $circle.style.setProperty("--ypos", `${currentY}px`);
+    function startAnimation() {
+      if (rafId === null) rafId = requestAnimationFrame(animateCircle);
+    }
 
-    requestAnimationFrame(animateCircle);
-  }
-
-  animateCircle();
-
-  $divs.forEach((div) => {
-    div.addEventListener("mouseenter", () => {
+    function enterDiv(div) {
       const divRect = div.getBoundingClientRect();
       const scrollOffsetY = window.scrollY; // Kompenzujemo skrol
 
@@ -309,40 +298,88 @@ document.addEventListener("DOMContentLoaded", () => {
 
       onDiv = true;
       hoveringDiv = div;
-    });
+      startAnimation();
+    }
 
-    div.addEventListener("mouseleave", (evt) => {
-      if (hoveringDiv === div) {
-        onDiv = false;
-        hoveringDiv = null;
+    function initCursor(firstEvt) {
+      // Krug odmah stoji na poziciji miša i postaje vidljiv
+      currentX = targetX = firstEvt.clientX + 0 - $circle.offsetWidth / 2;
+      currentY = targetY = firstEvt.clientY + window.scrollY - $circle.offsetHeight / 2;
+      $circle.style.setProperty("--xpos", `${currentX}px`);
+      $circle.style.setProperty("--ypos", `${currentY}px`);
+      $circle.classList.add("active");
 
-        $circle.style.width = "var(--circleSize)";
-        $circle.style.height = "var(--circleSize)";
-        $circle.style.borderRadius = "50%";
+      // Praćenje miša
+      $context.addEventListener("pointermove", (evt) => {
+        if (!onDiv) {
+          targetX = evt.clientX - $circle.offsetWidth / 2;
+          targetY = evt.clientY + window.scrollY - $circle.offsetHeight / 2;
+          startAnimation();
+        }
+      }, { passive: true });
 
-        targetX = evt.clientX - $circle.offsetWidth / 2;
-        targetY = evt.clientY + window.scrollY - $circle.offsetHeight / 2;
-      }
-    });
-  }); // <-- Ova zagrada je bila problem
+      $divs.forEach((div) => {
+        div.addEventListener("mouseenter", () => enterDiv(div));
 
-  // Koristite Intersection Observer za elemente koji nisu u viewportu
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        // Onemogućite event listenere za elemente koji nisu vidljivi
-        entry.target.style.pointerEvents = 'none';
-      } else {
-        entry.target.style.pointerEvents = 'auto';
-      }
-    });
-  }, { threshold: 0.1 });
+        div.addEventListener("mouseleave", (evt) => {
+          if (hoveringDiv === div) {
+            onDiv = false;
+            hoveringDiv = null;
 
-  // OVO JE KLJUČNO: Povezivanje observera sa div elementima
-  $divs.forEach(div => {
-    observer.observe(div);
-  });
+            $circle.style.width = "var(--circleSize)";
+            $circle.style.height = "var(--circleSize)";
+            $circle.style.borderRadius = "50%";
 
+            targetX = evt.clientX - $circle.offsetWidth / 2;
+            targetY = evt.clientY + window.scrollY - $circle.offsetHeight / 2;
+            startAnimation();
+          }
+        });
+      });
+
+      // Ako je miš pri prvom pokretu već iznad kartice, mouseenter se neće okinuti pa je hvatamo ručno
+      const startDiv = document.elementFromPoint(firstEvt.clientX, firstEvt.clientY);
+      const hovered = startDiv && startDiv.closest(".interactive .interactive-div");
+      if (hovered) enterDiv(hovered);
+    }
+
+    document.addEventListener("pointermove", (evt) => {
+      if (evt.pointerType === "mouse") initCursor(evt);
+    }, { once: true, passive: true });
+  }
+  // Odloženo učitavanje: Google mapa (iframe[data-src]) i fontovi za potpis u footeru
+  const lazyMaps = document.querySelectorAll("iframe[data-src]");
+  const footerSignature = document.querySelector(".copyright");
+
+  const loadMap = (iframe) => {
+    iframe.src = iframe.dataset.src;
+    iframe.removeAttribute("data-src");
+  };
+
+  const loadSignatureFonts = () => {
+    if (!("FontFace" in window)) return;
+    [
+      new FontFace("lexend", "url(fonts/Lexend/LexendZetta-Light.woff2)", { display: "swap" }),
+      new FontFace("mrs_saint", "url(fonts/Mrs_Saint_Delafield/MrsSaintDelafield-Regular.woff2)", { display: "swap" }),
+    ].forEach((font) => font.load().then((f) => document.fonts.add(f)).catch(() => {}));
+  };
+
+  if ("IntersectionObserver" in window) {
+    const lazyObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        obs.unobserve(entry.target);
+        if (entry.target.dataset.src) loadMap(entry.target);
+        else loadSignatureFonts();
+      });
+    }, { rootMargin: "300px" });
+
+    lazyMaps.forEach((iframe) => lazyObserver.observe(iframe));
+    if (footerSignature) lazyObserver.observe(footerSignature);
+  } else {
+    lazyMaps.forEach(loadMap);
+    loadSignatureFonts();
+  }
   // Praćenje klikova na .trackcall dugmad - slanje na eksterni server
   document.querySelectorAll(".trackcall").forEach(function (el) {
     el.addEventListener("click", function () {

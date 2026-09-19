@@ -12,18 +12,18 @@
     <meta name="robots" content="index, follow">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://domaca-hrana.com/o-nama">
+    <link rel="canonical" href="https://domaca-hrana.com/o-nama.html">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://domaca-hrana.com/o-nama">
+    <meta property="og:url" content="https://domaca-hrana.com/o-nama.html">
     <meta property="og:title" content="Domaće kiflice i štrudle | O nama">
     <meta property="og:description" content="Saznajte više o nama i našoj tradiciji pravljenja domaćih kiflica i štrudli. Porodični recept koji se prenosi generacijama.">
     <meta property="og:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://domaca-hrana.com/o-nama">
+    <meta property="twitter:url" content="https://domaca-hrana.com/o-nama.html">
     <meta property="twitter:title" content="Domaće kiflice i štrudle | O nama">
     <meta property="twitter:description" content="Saznajte više o nama i našoj tradiciji pravljenja domaćih kiflica i štrudli. Porodični recept koji se prenosi generacijama.">
     <meta property="twitter:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
@@ -32,18 +32,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon-domace-logo-180w.png">
     <link rel="icon" type="image/png" sizes="32x32" href="logos/favicon-domace-logo-32w.png">
     <link rel="icon" type="image/png" sizes="16x16" href="logos/favicon-domace-logo-16w.png">
-    <link rel="manifest" href="/site.webmanifest">
     
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
-    <!-- Add Google Fonts for Lora and DM Sans -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Great+Vibes&family=Lora:wght@600&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preload" href="fonts/google/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/great-vibes-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="fonts/fonts.css">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -55,7 +49,7 @@
           "description": "Specijalizovana hrana sa tradicijom - sveže pečene domaće kiflice i štrudle sa makom i orasima, sa dostavom na kućnu adresu u Beogradu.",
           "url": "https://domaca-hrana.com/",
           "logo": "https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg",
-          "telephone": "+381611476514",
+          "telephone": "+381600409622",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Grobljanska 97",
@@ -94,7 +88,7 @@
             {
               "@type": "Offer",
               "name": "Dostava na kućnu adresu",
-              "description": "Besplatna dostava za porudžbine preko 1500 RSD na teritoriji celog Beograda",
+              "description": "Besplatna dostava za porudžbine preko 2500 RSD na teritoriji celog Beograda",
               "areaServed": {
                 "@type": "City",
                 "name": "Beograd",
@@ -102,7 +96,7 @@
               },
               "eligibleTransactionVolume": {
                 "@type": "PriceSpecification",
-                "price": "1500",
+                "price": "2500",
                 "priceCurrency": "RSD"
               }
             },
@@ -163,7 +157,7 @@
           "potentialAction": [
             {
               "@type": "OrderAction",
-              "target": "https://domaca-hrana.com/narucite"
+              "target": "https://domaca-hrana.com/kontakt.html"
             },
             {
               "@type": "CommunicateAction",
@@ -242,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- Tablet image: 1024x768 -->
             <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-domace-1024w.jpg">
             <!-- Desktop image: 1920x1080 -->
-            <img src="slike/domace-kiflice-domace.jpg" alt="domace kiflice i strudle tradicija porodicni recept" class="hero-image" title="Naša tradicija">
+            <img fetchpriority="high" src="slike/domace-kiflice-domace.jpg" width="1920" height="1080" alt="domace kiflice i strudle tradicija porodicni recept" class="hero-image" title="Naša tradicija">
         </picture>
     </section>
 
@@ -297,7 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="story-image">
                 <!-- Image dimensions: 600x800 -->
-                <img loading="lazy" class="interactive-div" src="slike/domaca-hrana-domace-kiflice.jpg" alt="domace kiflice porodicna tradicija" title="Porodična tradicija">
+                <img loading="lazy" class="interactive-div" src="slike/domaca-hrana-domace-kiflice.jpg" width="600" height="500" alt="domace kiflice porodicna tradicija" title="Porodična tradicija">
             </div>
         </div>
         <div class="jos-o-nama">
@@ -449,15 +443,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="partners">
                 <a href="https://katarinaketering.com/" class="partner interactive-div" target="_blank" rel="noopener noreferrer">
                     <!-- Image dimensions: 200x100 -->
-                    <img loading="lazy" src="logos/katarina-ketering-logo.png" alt="Katarina ketering" title="Katarina ketering">
+                    <img loading="lazy" src="logos/katarina-ketering-logo.png" width="167" height="120" alt="Katarina ketering" title="Katarina ketering">
                 </a>
                 <a href="https://izrada-sajtova-rs.com/" class="partner interactive-div" target="_blank" rel="noopener noreferrer">
                     <!-- Image dimensions: 200x100 -->
-                    <img loading="lazy" src="logos/izrada-sajtova-rs.svg" alt="Izrada web sajtova" title="Izrada web sajtova">
+                    <img loading="lazy" src="logos/izrada-sajtova-rs.svg" width="1447" height="555" alt="Izrada web sajtova" title="Izrada web sajtova">
                 </a>
                 <a href="https://lavandabeograd.com/" class="partner interactive-div" target="_blank" rel="noopener noreferrer">
                     <!-- Image dimensions: 200x100 -->
-                    <img loading="lazy" src="logos/Lavanda.png" alt="Prodaja lavande" title="Prodaja lavande">
+                    <img loading="lazy" src="logos/Lavanda.png" width="200" height="100" alt="Prodaja lavande" title="Prodaja lavande">
                 </a>
             </div>
         </div>
@@ -476,7 +470,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Footer -->
     <div class="dekor">
-        <img loading="lazy" src="slike/domace-iz-srbije-dekoracija.png" alt="domace iz srbije">
+        <img loading="lazy" src="slike/domace-iz-srbije-dekoracija.png" width="2000" height="42" alt="domace iz srbije">
     </div>
     <footer class="footer">
         <div class="container">
@@ -500,7 +494,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="footer-column">
                     <h3>Gde se nalazimo</h3>
                     <div class="footer-map">
-                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181102.09061018072!2d20.304029730598383!3d44.82715416401004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a5cef3eb4327d%3A0xea2f2c38a17d639d!2z0JPRgNC-0LHRmdCw0L3RgdC60LAgOTcsIFVncmlub3ZjaSwgU2VyYmlh!5e0!3m2!1sen!2s!4v1741621341998!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181102.09061018072!2d20.304029730598383!3d44.82715416401004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a5cef3eb4327d%3A0xea2f2c38a17d639d!2z0JPRgNC-0LHRmdCw0L3RgdC60LAgOTcsIFVncmlub3ZjaSwgU2VyYmlh!5e0!3m2!1sen!2s!4v1741621341998!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <address>
                         Grobljanska 97, Ugrinovci<br>

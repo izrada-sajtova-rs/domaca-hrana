@@ -5,8 +5,8 @@
   
   <!-- Glavne stranice -->
   <url>
-    <loc>https://domaca-hrana.com/index.html</loc>
-    <lastmod>2024-06-01</lastmod>
+    <loc>https://domaca-hrana.com/</loc>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,7 +17,7 @@
   
   <url>
     <loc>https://domaca-hrana.com/domace-kiflice.html</loc>
-    <lastmod>2024-05-20</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -63,7 +63,7 @@
   <!-- Cenovnik sa dodatnim metapodacima -->
   <url>
     <loc>https://domaca-hrana.com/cene.html</loc>
-    <lastmod>2024-05-15</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -107,11 +107,5 @@
   </url>
   
   <!-- Zahvalnica -->
-  <url>
-    <loc>https://domaca-hrana.com/hvala.html</loc>
-    <lastmod>2024-01-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 </urlset>
