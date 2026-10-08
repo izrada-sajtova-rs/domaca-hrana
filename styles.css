@@ -1,14 +1,15 @@
 /* 
 * Domaće Kiflice - Main Stylesheet
 * Version: 1.0
-* Last updated: 2025-03-10
+* Last updated: 2026-10-08
 */
 /* Fontovi "lexend" i "mrs_saint" (potpis u footeru) se učitavaju iz script.js kad footer priđe ekranu */
 
 /* ===== VARIABLES ===== */
 :root {
   /* Colors */
-  --primary-color: #d28c60;
+  --primary-color: #9c5a30; /* dovoljno tamna za beli tekst i za tekst na svetloj podlozi (WCAG AA) */
+  --primary-light: #f0c29f; /* ista nijansa za tamne podloge */
   --secondary-color: #6e3b1d;
   --text-color: #333333;
   --light-text: #ffffff;
@@ -66,17 +67,6 @@ body.active {
   overflow: hidden;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -104,6 +94,17 @@ ol {
   background-color: var(--primary-color);
   color: var(--light-text);
 }
+/* Vidljiv fokus pri kretanju tastaturom */
+:focus-visible {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+.footer :focus-visible,
+.hero :focus-visible,
+.cta-section :focus-visible {
+  outline-color: #ffffff;
+}
+
 /* ===== TYPOGRAPHY ===== */
 h1,
 h2,
@@ -121,7 +122,7 @@ h6 {
 
 h1 {
   font-size: clamp(2rem, 5vw, 3rem);
-  background: linear-gradient(to right, rgb(83, 56, 20), #6e3b1d, #d28c60);
+  background: linear-gradient(to right, rgb(83, 56, 20), #6e3b1d, #9c5a30);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -129,7 +130,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.4rem, 4vw, 2rem);
-  background: linear-gradient(to right, rgb(83, 56, 20), #6e3b1d, #d28c60);
+  background: linear-gradient(to right, rgb(83, 56, 20), #6e3b1d, #9c5a30);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -295,6 +296,10 @@ section {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.hero-content .subtitle {
+  color: var(--primary-light);
+}
+
 .hero-content h1,
 .hero-content p {
   color: var(--light-text);
@@ -402,7 +407,7 @@ section {
   gap: 2rem;
   margin-top: 3rem;
 }
-.products-section h2, .products-section .subtitle, .delivery-section h2, .delivery-section .subtitle, .testimonials-section h2, .testimonials-section .subtitle, .partners-section h2, .partners-section .subtitle, .cta-section h2, .cta-section .subtitle {
+.products-section h2, .products-section .subtitle, .delivery-section h2, .delivery-section .subtitle, .partners-section h2, .partners-section .subtitle, .cta-section h2, .cta-section .subtitle {
   text-align: center;
 }
 .product-card {
@@ -530,90 +535,6 @@ section {
 .about-image img {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-}
-
-/* ===== TESTIMONIALS SECTION ===== */
-.testimonials-section {
-  padding: 5rem 0;
-  background-color: var(--background-color);
-}
-
-.testimonials-slider {
-  margin: 3rem 0;
-  position: relative;
-}
-
-.testimonial-slide {
-  display: none;
-}
-
-.testimonial-content {
-  background-color: var(--card-background);
-  padding: 2rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  max-width: 800px;
-  margin: 0 auto;
-  height: 250px;
-}
-
-.stars {
-  color: #ffd700;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.testimonial-author {
-  font-weight: 700;
-  margin-top: 1rem;
-  color: var(--secondary-color);
-  text-align: right;
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.prev-slide,
-.next-slide {
-  background-color: var(--primary-color);
-  color: var(--light-text);
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.prev-slide:hover,
-.next-slide:hover {
-  background-color: var(--secondary-color);
-}
-
-.slider-dots {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.slider-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ddd;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.slider-dot.active {
-  background-color: var(--primary-color);
 }
 
 /* ===== DELIVERY SECTION ===== */
@@ -765,7 +686,7 @@ section {
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-copyright a {
+.copyright a {
   color: #fff;
   text-decoration: none;
 }
@@ -816,9 +737,6 @@ copyright a {
   background-color: var(--primary-color);
   color: var(--light-text);
 }
-.fa-phone-alt {
-  color: white;
-}
 .music-toggle {
   bottom: 30px;
   left: 30px;
@@ -861,32 +779,6 @@ copyright a {
 .info-icon {
   font-size: 1.5rem;
   color: var(--primary-color);
-}
-
-.social-links {
-  margin-top: 2rem;
-}
-
-.social-icons {
-  display: flex;
-  gap: 1rem;
-}
-
-.social-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  color: var(--light-text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: var(--transition);
-}
-
-.social-icon:hover {
-  background-color: var(--secondary-color);
-  transform: translateY(-3px);
 }
 
 .contact-form-container {
@@ -937,6 +829,11 @@ copyright a {
 
 .form-checkbox input {
   width: auto;
+}
+
+/* zamka za spam robote, ljudi je ne vide */
+.form-honey {
+  display: none;
 }
 
 .map-section {
@@ -1001,7 +898,8 @@ copyright a {
   padding: 0 1.5rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  visibility: hidden; /* linkovi u zatvorenom odgovoru nisu dostupni tastaturom */
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s;
   opacity: 0;
 }
 
@@ -1009,6 +907,7 @@ copyright a {
   padding: 1rem 1.5rem 1.5rem;
   max-height: 500px;
   opacity: 1;
+  visibility: visible;
 }
 
 /* ===== PRICE LIST PAGE ===== */
@@ -1099,7 +998,7 @@ copyright a {
 
 .price-note {
   font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .price-notes {
@@ -1192,52 +1091,6 @@ copyright a {
 .value-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-}
-
-/* ===== TEAM SECTION ===== */
-.team-section {
-  padding: 5rem 0;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.team-member {
-  background-color: var(--card-background);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
-}
-
-.team-member:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--hover-shadow);
-}
-
-.team-member img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.team-member h3 {
-  margin: 1rem 0 0.5rem;
-  padding: 0 1.5rem;
-}
-
-.member-role {
-  color: var(--primary-color);
-  font-weight: 500;
-  padding: 0 1.5rem;
-}
-
-.team-member p {
-  padding: 0.5rem 1.5rem 1.5rem;
 }
 
 /* ===== PROCESS SECTION ===== */
@@ -1379,23 +1232,10 @@ copyright a {
   margin-bottom: 0.5rem;
 }
 
-
-/* ===== CURSOR STYLES ===== */
-/* * {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="%23d28c60" opacity="0.5"/></svg>')
-    8 8, auto;
+.legal-text a {
+  text-decoration: underline;
 }
 
-a,
-button,
-.nav-link,
-.hamburger,
-.slider-dot,
-.category-tab,
-.faq-question {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="%23d28c60"/></svg>')
-    12 12, pointer;
-} */
 
 /* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 1200px) {
@@ -1488,7 +1328,7 @@ button,
   .gallery-grid {
     grid-template-columns: 1fr;
   }
-  .products-section h2, .products-section .subtitle, .delivery-section h2, .delivery-section .subtitle, .testimonials-section h2, .testimonials-section .subtitle, .partners-section h2, .partners-section .subtitle, .cta-section h2, .cta-section .subtitle {
+  .products-section h2, .products-section .subtitle, .delivery-section h2, .delivery-section .subtitle, .partners-section h2, .partners-section .subtitle, .cta-section h2, .cta-section .subtitle {
   text-align: left;
 }
 .delivery-card {
@@ -1526,10 +1366,6 @@ button,
   }
 }
 
-/* Animation for fade-in elements */
-.fade-in {
-  animation: fadeIn 1s ease-in-out forwards;
-}
 @media (max-width: 500px) {
   .container, .jos-o-nama {
     width: 100%;
@@ -1578,7 +1414,6 @@ html {
 }
 
 
-
 .interactive-div  {
   min-height: 0;
   min-width: 0;
@@ -1592,11 +1427,6 @@ html {
   clip-path: inset(0px 0px round 12px);
 }
 
-@container interactive (min-width: 750px) {
-  .interactive-div:hover {
-    clip-path: inset(0px 0px round 12px);
-  }
-}
 .trackcall svg,
 .trackcall svg * {
   pointer-events: none;

@@ -5,22 +5,41 @@ document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
 
   if (hamburger && nav) {
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      nav.classList.toggle("active");
-      body.classList.toggle("active");
+    const setMenu = (open) => {
+      hamburger.classList.toggle("active", open);
+      nav.classList.toggle("active", open);
+      body.classList.toggle("active", open);
+      hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+    };
+    setMenu(false);
+
+    hamburger.addEventListener("click", () => setMenu(!nav.classList.contains("active")));
+
+    // Close menu when clicking on a nav link
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => setMenu(false));
+    });
+
+    // Escape zatvara meni i vraća fokus na dugme
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("active")) {
+        setMenu(false);
+        hamburger.focus();
+      }
     });
   }
 
-  // Close menu when clicking on a nav link
-  const navLinks = document.querySelectorAll(".nav-link");
-  navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      hamburger.classList.remove("active");
-      nav.classList.remove("active");
-      body.classList.remove("active");
+  // Elementi koji nisu <button> dobijaju ponašanje dugmeta: fokus tastaturom i aktiviranje na Enter/Space
+  const makeButton = (el, role) => {
+    el.setAttribute("role", role);
+    el.setAttribute("tabindex", "0");
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        el.click();
+      }
     });
-  });
+  };
 
   // Counters Animation - pokreće se jednom, kad sekcija uđe u vidno polje
   const counters = document.querySelectorAll(".counter");
@@ -54,75 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
       animateCounters();
     }
   }
-  // Testimonials Slider
-  const testimonialSlider = document.querySelector(".testimonials-slider");
-  const testimonialSlides = document.querySelectorAll(".testimonial-slide");
-  const prevBtn = document.querySelector(".prev-slide");
-  const nextBtn = document.querySelector(".next-slide");
-  const sliderDots = document.querySelector(".slider-dots");
-
-  if (testimonialSlider && testimonialSlides.length > 0) {
-    let currentSlide = 0;
-
-    // Create dots
-    testimonialSlides.forEach((_, index) => {
-      const dot = document.createElement("div");
-      dot.classList.add("slider-dot");
-      if (index === 0) dot.classList.add("active");
-      dot.addEventListener("click", () => goToSlide(index));
-      sliderDots.appendChild(dot);
-    });
-
-    const dots = document.querySelectorAll(".slider-dot");
-
-    // Show slide
-    function showSlide(n) {
-      testimonialSlides.forEach((slide, index) => {
-        slide.style.display = index === n ? "block" : "none";
-        dots[index].classList.toggle("active", index === n);
-      });
-    }
-
-    // Go to specific slide
-    function goToSlide(n) {
-      currentSlide = n;
-      showSlide(currentSlide);
-    }
-
-    // Next slide
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % testimonialSlides.length;
-      showSlide(currentSlide);
-    }
-
-    // Previous slide
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length;
-      showSlide(currentSlide);
-    }
-
-    // Event listeners
-    if (prevBtn) prevBtn.addEventListener("click", prevSlide);
-    if (nextBtn) nextBtn.addEventListener("click", nextSlide);
-
-    // Auto slide
-    let slideInterval = setInterval(nextSlide, 5000);
-
-    // Pause on hover
-    testimonialSlider.addEventListener("mouseenter", () => {
-      clearInterval(slideInterval);
-    });
-
-    testimonialSlider.addEventListener("mouseleave", () => {
-      slideInterval = setInterval(nextSlide, 5000);
-    });
-
-    // Initialize slider
-    showSlide(currentSlide);
-  }
-
   // Scroll Animation - IntersectionObserver umesto scroll listenera (bez stalnog čitanja layouta)
-  const animatedElements = document.querySelectorAll(".product-card, .about-content, .about-image, .delivery-card, .partner, .price-categories, .price-tables, .price-notes, .order-cta, .product-content, .product-variants, .product-gallery, .ingredients-section, .order-info, .testimonials-section, .story-section, .values-section, .process-step, .faq-item, .map-section, .contact-section");
+  const animatedElements = document.querySelectorAll(".product-card, .about-content, .about-image, .delivery-card, .partner, .price-categories, .price-tables, .price-notes, .order-cta, .product-content, .product-variants, .product-gallery, .ingredients-section, .order-info, .story-section, .values-section, .process-step, .faq-item, .map-section, .contact-section");
 
   if ("IntersectionObserver" in window) {
     const fadeObserver = new IntersectionObserver((entries, obs) => {
@@ -190,14 +142,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const toggle = item.querySelector('.faq-toggle');
     
       if (question && answer && toggle) {
+        makeButton(question, "button");
+        question.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-hidden", "true");
+
         question.addEventListener('click', () => {
           // Close all other answers
           faqItems.forEach(otherItem => {
             if (otherItem !== item) {
               const otherAnswer = otherItem.querySelector('.faq-answer');
               const otherToggle = otherItem.querySelector('.faq-toggle');
+              const otherQuestion = otherItem.querySelector('.faq-question');
               if (otherAnswer && otherAnswer.classList.contains('active')) {
                 otherAnswer.classList.remove('active');
+                if (otherQuestion) otherQuestion.setAttribute("aria-expanded", "false");
                 if (otherToggle) {
                   otherToggle.innerHTML = '<i class="fas fa-plus"></i>';
                 }
@@ -207,6 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
           // Toggle current answer
           answer.classList.toggle('active');
+          question.setAttribute("aria-expanded", answer.classList.contains('active') ? "true" : "false");
           if (answer.classList.contains('active')) {
             toggle.innerHTML = '<i class="fas fa-minus"></i>';
           } else {
@@ -222,14 +181,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const priceTables = document.querySelectorAll(".price-table");
 
   if (categoryTabs.length > 0 && priceTables.length > 0) {
+    const tabList = categoryTabs[0].parentElement;
+    if (tabList) tabList.setAttribute("role", "tablist");
+
     categoryTabs.forEach((tab) => {
+      makeButton(tab, "tab");
+      tab.setAttribute("aria-selected", tab.classList.contains("active") ? "true" : "false");
+      tab.setAttribute("aria-controls", tab.getAttribute("data-category"));
+
       tab.addEventListener("click", function () {
         // Remove active class from all tabs and tables
-        categoryTabs.forEach((t) => t.classList.remove("active"));
+        categoryTabs.forEach((t) => {
+          t.classList.remove("active");
+          t.setAttribute("aria-selected", "false");
+        });
         priceTables.forEach((table) => table.classList.remove("active"));
 
         // Add active class to clicked tab
         this.classList.add("active");
+        this.setAttribute("aria-selected", "true");
 
         // Show corresponding price table
         const category = this.getAttribute("data-category");

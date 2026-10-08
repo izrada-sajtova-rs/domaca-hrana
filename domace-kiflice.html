@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="sr">
+<!--
+  Autorska prava: Domaće (domaca-hrana.com)
+  Sajt napravio: Izrada sajtova RS - https://izrada-sajtova-rs.com/
+-->
+<html lang="sr-Latn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +11,6 @@
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Domaće kiflice sa sirom, kulenom, šunkom, džemom i eurokremom od 900 do 1200 RSD po kg. Sveže pečene, ručno pravljene, dostava po Beogradu u roku od 24 sata.">
-  <meta name="keywords" content="domaće kiflice, domace kiflice, domaće kiflice cena, domaće kiflice beograd, domaće kiflice sa sirom, domaće kiflice sa džemom, kiflice sa kulenom, kiflice sa eurokremom, domace kiflice novi beograd">
   <meta name="author" content="Domaće">
   <meta name="robots" content="index, follow">
   
@@ -16,17 +19,18 @@
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="sr_RS">
   <meta property="og:url" content="https://domaca-hrana.com/domace-kiflice.html">
   <meta property="og:title" content="Domaće kiflice Beograd – cene i dostava | Domaća hrana">
   <meta property="og:description" content="Domaće kiflice sa sirom, kulenom, šunkom, džemom i eurokremom od 900 do 1200 RSD po kg. Sveže pečene, ručno pravljene, dostava po Beogradu u roku od 24 sata.">
-  <meta property="og:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+  <meta property="og:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
   
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://domaca-hrana.com/domace-kiflice.html">
-  <meta property="twitter:title" content="Domaće kiflice Beograd – cene i dostava | Domaća hrana">
-  <meta property="twitter:description" content="Domaće kiflice sa sirom, kulenom, šunkom, džemom i eurokremom od 900 do 1200 RSD po kg. Sveže pečene, ručno pravljene, dostava po Beogradu u roku od 24 sata.">
-  <meta property="twitter:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://domaca-hrana.com/domace-kiflice.html">
+  <meta name="twitter:title" content="Domaće kiflice Beograd – cene i dostava | Domaća hrana">
+  <meta name="twitter:description" content="Domaće kiflice sa sirom, kulenom, šunkom, džemom i eurokremom od 900 do 1200 RSD po kg. Sveže pečene, ručno pravljene, dostava po Beogradu u roku od 24 sata.">
+  <meta name="twitter:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
   
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon-domace-logo-180w.png">
@@ -35,26 +39,32 @@
   
   <!-- Fonts -->
     <link rel="preload" href="fonts/google/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/dm-sans-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/lora-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/great-vibes-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/great-vibes-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Hero slika (LCP) -->
-    <link rel="preload" as="image" href="slike/domace-kiflice-domace-kiflice-640w.jpg" media="(max-width: 640px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/domace-kiflice-domace-kiflice-1024w.jpg" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/domace-kiflice-domace-kiflice.jpg" media="(min-width: 1025px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-domace-kiflice-640w.webp" media="(max-width: 640px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-domace-kiflice-1024w.webp" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-domace-kiflice.webp" media="(min-width: 1025px)" fetchpriority="high">
   
   
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "Bakery",
+      "@id": "https://domaca-hrana.com/#bakery",
       "name": "Domaće - Najukusnije domaće kiflice i štrudle",
-      "description": "Specijalizovana hrana sa tradicijom - sveže pečene domaće kiflice i štrudle sa makom i orasima, sa dostavom na kućnu adresu u Beogradu.",
       "url": "https://domaca-hrana.com/",
-      "logo": "https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg",
+      "image": "https://domaca-hrana.com/logos/domace-domaca-hrana.jpg",
       "telephone": "+381600409622",
+      "priceRange": "900–1200 RSD",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Grobljanska 97",
@@ -63,252 +73,196 @@
         "postalCode": "11277",
         "addressCountry": "RS"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 44.8765,
-        "longitude": 20.1876
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "08:00",
-          "closes": "20:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "09:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "00:00",
-          "closes": "00:00",
-          "description": "Zatvoreno"
-        }
-      ],
-      "priceRange": "1000din",
-          "servesCuisine": "Tradicionalna srpska kuhinja",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Bakery Products",
+        "name": "Domaće kiflice i štrudle",
         "itemListElement": [
           {
             "@type": "OfferCatalog",
-            "name": "Kiflice",
+            "name": "Domaće kiflice",
             "itemListElement": [
               {
                 "@type": "Offer",
+                "price": "1000",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
                 "itemOffered": {
                   "@type": "Product",
                   "name": "Kiflice sa sirom",
                   "description": "Mekane kiflice punjene kvalitetnim sirom",
-                  "sku": "kiflice-sir",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "1000",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
+                  "sku": "kiflice-sir"
                 }
               },
               {
                 "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Product",
-                  "name": "Kiflice sa eurokremom",
-                  "description": "Slatke kiflice punjene ukusnim eurokremom",
-                  "sku": "kiflice-eurokrem",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "1100",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Product",
-                  "name": "Kiflice sa džemom",
-                  "description": "Sočne kiflice punjene domaćim džemom od kajsija",
-                  "sku": "kiflice-dzem",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "1000",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
-                }
-              },
-              {
-                "@type": "Offer",
+                "price": "1200",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
                 "itemOffered": {
                   "@type": "Product",
                   "name": "Kiflice sa sirom i šunkom",
                   "description": "Mekane kiflice punjene šunkom i sirom",
-                  "sku": "kiflice-sir-sunka",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "1200",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
+                  "sku": "kiflice-sir-sunka"
                 }
               },
               {
                 "@type": "Offer",
+                "price": "1200",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
                 "itemOffered": {
                   "@type": "Product",
                   "name": "Kiflice sa kulenom",
                   "description": "Mekane kiflice punjene kulenom",
-                  "sku": "kiflice-kulen",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "1200",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
+                  "sku": "kiflice-kulen"
                 }
               },
               {
                 "@type": "Offer",
+                "price": "1100",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Kiflice sa eurokremom",
+                  "description": "Slatke kiflice punjene ukusnim eurokremom",
+                  "sku": "kiflice-eurokrem"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "1000",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Kiflice sa džemom",
+                  "description": "Sočne kiflice punjene domaćim džemom od kajsija",
+                  "sku": "kiflice-dzem"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "900",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
                 "itemOffered": {
                   "@type": "Product",
                   "name": "Prazne kiflice",
                   "description": "Klasične kiflice bez punjenja, idealne uz obrok",
-                  "sku": "kiflice-prazne",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "900",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
+                  "sku": "kiflice-prazne"
                 }
               }
             ]
           }
-            ]
-      },
-      "makesOffer": [
-        {
-          "@type": "Offer",
-          "name": "Dostava na kućnu adresu",
-          "description": "Besplatna dostava za porudžbine preko 2500 RSD na teritoriji celog Beograda",
-          "areaServed": {
-            "@type": "City",
-            "name": "Beograd",
-            "sameAs": "https://www.wikidata.org/wiki/Q3711"
-          },
-          "eligibleTransactionVolume": {
-            "@type": "PriceSpecification",
-            "price": "2500",
-            "priceCurrency": "RSD"
-          }
-        },
-        {
-          "@type": "Offer",
-          "name": "Prodaja na pijaci",
-          "description": "Svake subote na pijaci u bloku 44 možete naći naše proizvode i kupiti manje količine",
-          "areaServed": {
-            "@type": "Place",
-            "name": "Pijaca Blok 44, Novi Beograd"
-          }
-        }
-      ],
-      "review": [
-        {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Marija Petrović"
-          },
-          "datePublished": "2024-03-15",
-          "reviewBody": "Najbolje kiflice koje sam ikada jela! Mekane, sočne i savršeno pečene. Definitivno preporučujem."
-        }
-      ],
-      "potentialAction": [
-        {
-          "@type": "OrderAction",
-          "target": "https://domaca-hrana.com/kontakt.html"
-        },
-        {
-          "@type": "CommunicateAction",
-          "name": "Pozovite nas",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "tel:+381600409622",
-            "actionPlatform": [
-              "http://schema.org/DesktopWebPlatform",
-              "http://schema.org/MobileWebPlatform"
-            ]
-          },
-          "expectsAcceptanceOf": {
-            "@type": "Offer",
-            "description": "Pozovite nas za porudžbinu ili informacije"
-          }
-        }
-      ]
-    }
-    </script>
-    
-    <script type="application/ld+json">
+        ]
+      }
+    },
     {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://domaca-hrana.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Domaće kiflice", "item": "https://domaca-hrana.com/domace-kiflice.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Početna",
+          "item": "https://domaca-hrana.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Domaće kiflice",
+          "item": "https://domaca-hrana.com/domace-kiflice.html"
+        }
       ]
-    }
-    </script>
-    <script type="application/ld+json">
+    },
     {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
           "name": "Koliko koštaju domaće kiflice?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Cena domaćih kiflica je od 900 do 1200 RSD po kg, u zavisnosti od punjenja. Prazne kiflice su 900 RSD, sa sirom i džemom 1000 RSD, sa eurokremom 1100 RSD, a sa šunkom i sirom ili kulenom 1200 RSD po kg." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cena domaćih kiflica je od 900 do 1200 RSD po kg, u zavisnosti od punjenja. Prazne kiflice su 900 RSD, sa sirom i džemom 1000 RSD, sa eurokremom 1100 RSD, a sa šunkom i sirom ili kulenom 1200 RSD po kg. Sve cene pogledajte na stranici cene."
+          }
         },
         {
           "@type": "Question",
           "name": "Kako mogu da naručim domaće kiflice?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Domaće kiflice možete naručiti telefonom na +381 60 0409 622 ili preko kontakt forme na sajtu. Nakon porudžbine kontaktiramo vas radi potvrde i dogovora oko dostave." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Domaće kiflice možete naručiti telefonom na +381 60 0409 622 ili preko kontakt forme na sajtu. Nakon porudžbine kontaktiramo vas radi potvrde i dogovora oko dostave."
+          }
         },
         {
           "@type": "Question",
           "name": "Da li dostavljate domaće kiflice u Beogradu?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Da, dostavljamo na teritoriji celog Beograda u roku od 24 sata od porudžbine. Za porudžbine preko 2500 RSD dostava je besplatna." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da, dostavljamo na teritoriji celog Beograda u roku od 24 sata od porudžbine. Dostava je 600 RSD, a za porudžbine preko 2500 RSD je besplatna."
+          }
         },
         {
           "@type": "Question",
           "name": "Koje vrste domaćih kiflica pravite?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Pravimo kiflice sa sirom, sa sirom i šunkom, sa kulenom, sa eurokremom, sa džemom od kajsija i prazne kiflice bez punjenja." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pravimo kiflice sa sirom, sa sirom i šunkom, sa kulenom, sa eurokremom, sa džemom od kajsija i prazne kiflice bez punjenja."
+          }
         },
         {
           "@type": "Question",
           "name": "Da li domaće kiflice sadrže aditive i konzervanse?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Ne. Sve naše kiflice se prave ručno, od kvalitetnih sastojaka, bez aditiva i konzervansa." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ne. Sve naše kiflice se prave ručno, od kvalitetnih sastojaka, bez aditiva i konzervansa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Koliko domaćih kiflica ima u jednom kilogramu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "U jednom kilogramu ima oko 30 punjenih kiflica, odnosno oko 35 praznih kiflica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Koliko dugo domaće kiflice ostaju sveže?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Najbolje su u roku od 2-3 dana od pečenja. Čuvajte ih na sobnoj temperaturi u zatvorenoj posudi, a za duže čuvanje možete ih zamrznuti."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <!-- Google Tag Manager (odloženo do prve interakcije ili 8 s posle učitavanja, da ne blokira stranicu) -->
 <script>
@@ -344,11 +298,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <header class="header">
       <div class="container">
           <div class="logo">
-              <a href="index.html">Domaće</a>
+              <a href="./">Domaće</a>
           </div>
           <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Početna</a></li>
+                    <li class="nav-item"><a href="./" class="nav-link">Početna</a></li>
                     <li class="nav-item"><a href="domace-kiflice.html" class="nav-link active">Domaće kiflice</a></li>
                     <li class="nav-item"><a href="strudle-sa-makom.html" class="nav-link">Štrudle sa makom</a></li>
                     <li class="nav-item"><a href="strudle-sa-orasima.html" class="nav-link">Štrudle sa orasima</a></li>
@@ -374,14 +328,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p>Mekane i sočne domaće kiflice pravljene po tradicionalnom receptu, sa dostavom u Beogradu.</p>
           </div>
       </div>
-      <!-- Hero image with picture element for responsive images -->
       <picture>
-          <!-- Mobile image: 640x480 -->
-          <source media="(max-width: 640px)" srcset="slike/domace-kiflice-domace-kiflice-640w.jpg">
-          <!-- Tablet image: 1024x768 -->
-          <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-domace-kiflice-1024w.jpg">
-          <!-- Desktop image: 1920x1080 -->
-          <img fetchpriority="high" src="slike/domace-kiflice-domace-kiflice.jpg" width="1920" height="1080" alt="Sveže pečene domaće kiflice sa susamom" class="hero-image" title="Domaće kiflice">
+          <source media="(max-width: 640px)" srcset="slike/domace-kiflice-domace-kiflice-640w.webp">
+          <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-domace-kiflice-1024w.webp">
+          <img fetchpriority="high" src="slike/domace-kiflice-domace-kiflice.webp" width="1920" height="1080" alt="Sveže pečene domaće kiflice sa susamom" class="hero-image" title="Domaće kiflice">
       </picture>
   </section>
 
@@ -394,24 +344,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <p class="first-letter">Domaće kiflice su pravljene po tradicionalnom receptu koji se prenosi sa generacije na generaciju. Svaka kiflica je <strong>ručno oblikovana</strong> i pečena sa puno ljubavi i pažnje. Koristimo samo <strong>kvalitetne sastojke</strong> kako bismo osigurali savršen ukus i mekoću koja traje danima.</p>
               <p>Kiflice pravimo svakodnevno, tako da su uvek <strong>sveže</strong> kada stignu do vas. Možete ih naručiti u različitim veličinama i količinama, u zavisnosti od vaših potreba. Idealne su za <strong>doručak</strong>, <strong>užinu</strong> ili kao <strong>dodatak uz obrok</strong>.</p>
               <p>Naše kiflice su poznate po svojoj <strong>mekoći</strong> i <strong>sočnosti</strong>, a tajna je u posebnom načinu pripreme testa i pečenja. Svaka kiflica je <strong>jedinstvena</strong>, što im daje poseban šarm i autentičnost.</p>
-              <p>Domaće kiflice sa sirom, šunkom, kulenom, džemom ili eurokremom možete poručiti telefonom ili preko <a href="kontakt.html">kontakt forme</a>. Cena domaćih kiflica je od <strong>900 do 1200 RSD po kg</strong>, a dostavljamo na teritoriji celog Beograda u roku od 24 sata. Kompletan cenovnik pogledajte na stranici <a href="cene.html">cene</a>, a uz kiflice probajte i naše <a href="strudle-sa-makom.html">štrudle sa makom</a> i <a href="strudle-sa-orasima.html">štrudle sa orasima</a>.</p>
+              <p>Domaće kiflice sa sirom, šunkom, kulenom, džemom ili eurokremom možete poručiti telefonom ili preko <a href="kontakt.html">kontakt forme</a>. Cena domaćih kiflica je od <strong>900 do 1200 RSD po kg</strong>, a dostavljamo na teritoriji celog Beograda u roku od 24 sata (dostava je 600 RSD, a preko 2500 RSD besplatna). Kompletan cenovnik pogledajte na stranici <a href="cene.html">cene</a>, a uz kiflice probajte i naše <a href="strudle-sa-makom.html">štrudle sa makom</a> i <a href="strudle-sa-orasima.html">štrudle sa orasima</a>.</p>
           </div>
           
           <div class="product-gallery">
               <div class="gallery-grid ">
-                  <!-- Image dimensions: 600x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-1.jpg" width="600" height="400" alt="Domaće kiflice sa susamom i semenkama sveže pečene u tepsiji" title="Domaće kiflice sa susamom i semenkama sveže pečene u tepsiji">
-                  <!-- Image dimensions: 600x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-2.jpg" width="600" height="400" alt="Kidanje mekane domaće kiflice sa susamom" title="Kidanje mekane domaće kiflice sa susamom">
-                  <!-- Image dimensions: 600x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-3.jpg" width="600" height="400" alt="Mekana unutrašnjost domaće kiflice" title="Mekana unutrašnjost domaće kiflice">
-                  <!-- Image dimensions: 600x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-4.jpg" width="600" height="400" alt="Domaće kiflice sa semenkama u tepsiji" title="Domaće kiflice sa semenkama u tepsiji">
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-5.jpg" width="600" height="400" alt="Prelomljena domaća kiflica, mekano i vazdušasto testo" title="Prelomljena domaća kiflica, mekano i vazdušasto testo">
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-6.jpg" width="600" height="400" alt="Sastojci za domaće kiflice: brašno, jaja, ulje i kvasac" title="Sastojci za domaće kiflice: brašno, jaja, ulje i kvasac">
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-7.jpg" width="600" height="400" alt="Zlatne domaće kiflice sveže izvađene iz rerne" title="Zlatne domaće kiflice sveže izvađene iz rerne">
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-8.jpg" width="600" height="400" alt="Domaće kiflice sa sirom pripremljene za pečenje" title="Domaće kiflice sa sirom pripremljene za pečenje">
-                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-9.jpg" width="600" height="400" alt="Domaće kiflice sa susamom na drvenoj dasci" title="Domaće kiflice sa susamom na drvenoj dasci">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-1.webp" width="600" height="400" alt="Domaće kiflice sa susamom i semenkama sveže pečene u tepsiji" title="Domaće kiflice sa susamom i semenkama sveže pečene u tepsiji">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-2.webp" width="600" height="400" alt="Kidanje mekane domaće kiflice sa susamom" title="Kidanje mekane domaće kiflice sa susamom">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-3.webp" width="600" height="400" alt="Mekana unutrašnjost domaće kiflice" title="Mekana unutrašnjost domaće kiflice">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-4.webp" width="600" height="400" alt="Domaće kiflice sa semenkama u tepsiji" title="Domaće kiflice sa semenkama u tepsiji">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-5.webp" width="600" height="400" alt="Prelomljena domaća kiflica, mekano i vazdušasto testo" title="Prelomljena domaća kiflica, mekano i vazdušasto testo">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-6.webp" width="600" height="400" alt="Sastojci za domaće kiflice: brašno, jaja, ulje i kvasac" title="Sastojci za domaće kiflice: brašno, jaja, ulje i kvasac">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-7.webp" width="600" height="400" alt="Zlatne domaće kiflice sveže izvađene iz rerne" title="Zlatne domaće kiflice sveže izvađene iz rerne">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-8.webp" width="600" height="400" alt="Domaće kiflice sa sirom pripremljene za pečenje" title="Domaće kiflice sa sirom pripremljene za pečenje">
+                  <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-9.webp" width="600" height="400" alt="Domaće kiflice sa susamom na drvenoj dasci" title="Domaće kiflice sa susamom na drvenoj dasci">
               </div>
           </div>
           
@@ -490,7 +436,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <span class="faq-toggle">+</span>
                   </div>
                   <div class="faq-answer">
-                      <p>Da, dostavljamo na teritoriji celog Beograda u roku od 24 sata od porudžbine. Za porudžbine preko 2500 RSD dostava je besplatna.</p>
+                      <p>Da, dostavljamo na teritoriji celog Beograda u roku od 24 sata od porudžbine. Dostava je 600 RSD, a za porudžbine preko 2500 RSD je besplatna.</p>
                   </div>
               </div>
 
@@ -511,6 +457,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </div>
                   <div class="faq-answer">
                       <p>Ne. Sve naše kiflice se prave ručno, od kvalitetnih sastojaka, bez aditiva i konzervansa.</p>
+                  </div>
+              </div>
+
+              <div class="faq-item interactive-div">
+                  <div class="faq-question">
+                      <h3>Koliko domaćih kiflica ima u jednom kilogramu?</h3>
+                      <span class="faq-toggle">+</span>
+                  </div>
+                  <div class="faq-answer">
+                      <p>U jednom kilogramu ima oko 30 punjenih kiflica, odnosno oko 35 praznih kiflica.</p>
+                  </div>
+              </div>
+
+              <div class="faq-item interactive-div">
+                  <div class="faq-question">
+                      <h3>Koliko dugo domaće kiflice ostaju sveže?</h3>
+                      <span class="faq-toggle">+</span>
+                  </div>
+                  <div class="faq-answer">
+                      <p>Najbolje su u roku od 2-3 dana od pečenja. Čuvajte ih na sobnoj temperaturi u zatvorenoj posudi, a za duže čuvanje možete ih zamrznuti.</p>
                   </div>
               </div>
           </div>
@@ -561,7 +527,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Grobljanska 97, Ugrinovci<br>
                         Zemun, Beograd, 11277<br>
                         Tel: <a href="tel:+381600409622" class="trackcall">+381 60 0409 622</a><br>
-                        Email: <a href="mailto:bobann82@gmail.com">bobann82@gmail.com</a>
+                        Email: <a href="mailto:milovankan@gmail.com">milovankan@gmail.com</a>
                     </address>
                 </div>
             </div>
@@ -589,8 +555,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-

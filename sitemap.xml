@@ -1,111 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <!-- Glavne stranice -->
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://domaca-hrana.com/</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-08</lastmod>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/domace-kiflice.jpg</image:loc>
-      <image:title>Domaće kiflice i štrudle - Naslovna slika</image:title>
+      <image:loc>https://domaca-hrana.com/slike/domace-kiflice.webp</image:loc>
+      <image:title>Domaće kiflice i štrudle</image:title>
     </image:image>
   </url>
-  
   <url>
     <loc>https://domaca-hrana.com/domace-kiflice.html</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-08</lastmod>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/domace-kiflice-novi-beograd-1.jpg</image:loc>
-      <image:title>Domaće kiflice sa sirom</image:title>
+      <image:loc>https://domaca-hrana.com/slike/domace-kiflice-novi-beograd-1.webp</image:loc>
+      <image:title>Domaće kiflice sa susamom i semenkama</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/domace-kiflice-novi-beograd-2.jpg</image:loc>
-      <image:title>Kiflice sa eurokremom</image:title>
+      <image:loc>https://domaca-hrana.com/slike/domace-kiflice-novi-beograd-2.webp</image:loc>
+      <image:title>Mekana domaća kiflica sa susamom</image:title>
     </image:image>
   </url>
-  
   <url>
     <loc>https://domaca-hrana.com/strudle-sa-makom.html</loc>
-    <lastmod>2024-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-08</lastmod>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/strudla-sa-makom-2.jpg</image:loc>
-      <image:title>Klasična štrudla sa makom</image:title>
+      <image:loc>https://domaca-hrana.com/slike/strudla-sa-makom-2.webp</image:loc>
+      <image:title>Štrudla sa makom</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/strudla-sa-makom-3.jpg</image:loc>
-      <image:title>Štrudla sa makom i višnjama</image:title>
+      <image:loc>https://domaca-hrana.com/slike/strudla-sa-makom-3.webp</image:loc>
+      <image:title>Domaća štrudla sa makom</image:title>
     </image:image>
   </url>
-  
   <url>
     <loc>https://domaca-hrana.com/strudle-sa-orasima.html</loc>
-    <lastmod>2024-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-08</lastmod>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/strudla-sa-orasima-1.jpg</image:loc>
+      <image:loc>https://domaca-hrana.com/slike/strudla-sa-orasima-1.webp</image:loc>
       <image:title>Štrudla sa orasima</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/strudla-sa-orasima-2.jpg</image:loc>
-      <image:title>Štrudla sa orasima i medom</image:title>
+      <image:loc>https://domaca-hrana.com/slike/strudla-sa-orasima-2.webp</image:loc>
+      <image:title>Mekana domaća štrudla sa orasima</image:title>
     </image:image>
   </url>
-  
-  <!-- Cenovnik sa dodatnim metapodacima -->
   <url>
     <loc>https://domaca-hrana.com/cene.html</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-08</lastmod>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/domace-kiflice-cena.jpg</image:loc>
-      <image:title>Cenovnik domaćih proizvoda</image:title>
+      <image:loc>https://domaca-hrana.com/slike/domace-kiflice-cena.webp</image:loc>
+      <image:title>Domaće kiflice – cenovnik</image:title>
     </image:image>
   </url>
-  
-  <!-- Informativne stranice -->
   <url>
     <loc>https://domaca-hrana.com/o-nama.html</loc>
-    <lastmod>2024-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-10-08</lastmod>
     <image:image>
-      <image:loc>https://domaca-hrana.com/slike/domace-kiflice-domace.jpg</image:loc>
+      <image:loc>https://domaca-hrana.com/slike/domace-kiflice-domace.webp</image:loc>
       <image:title>O nama</image:title>
     </image:image>
   </url>
-  
   <url>
     <loc>https://domaca-hrana.com/kontakt.html</loc>
-    <lastmod>2024-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-10-08</lastmod>
   </url>
-  
-  <!-- Pravne stranice -->
   <url>
     <loc>https://domaca-hrana.com/politika-privatnosti.html</loc>
-    <lastmod>2024-01-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-10-08</lastmod>
   </url>
-  
   <url>
     <loc>https://domaca-hrana.com/uslovi-koriscenja.html</loc>
-    <lastmod>2024-01-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <lastmod>2026-10-08</lastmod>
   </url>
-  
-  <!-- Zahvalnica -->
-  
 </urlset>

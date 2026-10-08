@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="sr">
+<!--
+  Autorska prava: Domaće (domaca-hrana.com)
+  Sajt napravio: Izrada sajtova RS - https://izrada-sajtova-rs.com/
+-->
+<html lang="sr-Latn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +11,6 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Naručite domaće kiflice sa sirom, kulenom, džemom i eurokremom, kao i štrudle sa makom i orasima. Ručno pravljene, sveže pečene, dostava po Beogradu za 24 sata.">
-    <meta name="keywords" content="domaće kiflice, domace kiflice cena, domace kiflice novi beograd, štrudle sa makom, strudla sa makom, najmeksa strudla sa makom, strudla sa makom cena, štrudla sa orasima, strudla sa orasima, mekana domaca strudla sa orasima, posna strudla sa orasima">
     <meta name="author" content="Domaće">
     <meta name="robots" content="index, follow">
     
@@ -16,17 +19,18 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="sr_RS">
     <meta property="og:url" content="https://domaca-hrana.com/">
     <meta property="og:title" content="Domaće kiflice Beograd – sveže pečene | Domaća hrana">
     <meta property="og:description" content="Naručite domaće kiflice sa sirom, kulenom, džemom i eurokremom, kao i štrudle sa makom i orasima. Ručno pravljene, sveže pečene, dostava po Beogradu za 24 sata.">
-    <meta property="og:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+    <meta property="og:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://domaca-hrana.com/">
-    <meta property="twitter:title" content="Domaće kiflice Beograd – sveže pečene | Domaća hrana">
-    <meta property="twitter:description" content="Naručite domaće kiflice sa sirom, kulenom, džemom i eurokremom, kao i štrudle sa makom i orasima. Ručno pravljene, sveže pečene, dostava po Beogradu za 24 sata.">
-    <meta property="twitter:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://domaca-hrana.com/">
+    <meta name="twitter:title" content="Domaće kiflice Beograd – sveže pečene | Domaća hrana">
+    <meta name="twitter:description" content="Naručite domaće kiflice sa sirom, kulenom, džemom i eurokremom, kao i štrudle sa makom i orasima. Ručno pravljene, sveže pečene, dostava po Beogradu za 24 sata.">
+    <meta name="twitter:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon-domace-logo-180w.png">
@@ -35,373 +39,317 @@
     
     <!-- Fonts -->
     <link rel="preload" href="fonts/google/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/dm-sans-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/lora-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/great-vibes-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/great-vibes-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Hero slika (LCP) -->
-    <link rel="preload" as="image" href="slike/domace-kiflice-640w.jpg" media="(max-width: 640px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/domace-kiflice-1024w.jpg" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/domace-kiflice.jpg" media="(min-width: 1025px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-640w.webp" media="(max-width: 640px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-1024w.webp" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice.webp" media="(min-width: 1025px)" fetchpriority="high">
     
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Bakery",
+      "@id": "https://domaca-hrana.com/#bakery",
+      "name": "Domaće - Najukusnije domaće kiflice i štrudle",
+      "url": "https://domaca-hrana.com/",
+      "image": "https://domaca-hrana.com/logos/domace-domaca-hrana.jpg",
+      "telephone": "+381600409622",
+      "priceRange": "900–1200 RSD",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Grobljanska 97",
+        "addressLocality": "Ugrinovci",
+        "addressRegion": "Beograd",
+        "postalCode": "11277",
+        "addressCountry": "RS"
+      },
+      "description": "Specijalizovana hrana sa tradicijom - sveže pečene domaće kiflice i štrudle sa makom i orasima, sa dostavom na kućnu adresu u Beogradu.",
+      "logo": "https://domaca-hrana.com/logos/domace-domaca-hrana.jpg",
+      "email": "milovankan@gmail.com",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.8765,
+        "longitude": 20.1876
+      },
+      "openingHoursSpecification": [
         {
-          "@context": "https://schema.org",
-          "@type": "Bakery",
-          "name": "Domaće - Najukusnije domaće kiflice i štrudle",
-          "description": "Specijalizovana hrana sa tradicijom - sveže pečene domaće kiflice i štrudle sa makom i orasima, sa dostavom na kućnu adresu u Beogradu.",
-          "url": "https://domaca-hrana.com/",
-          "logo": "https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg",
-          "telephone": "+381600409622",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Grobljanska 97",
-            "addressLocality": "Ugrinovci",
-            "addressRegion": "Beograd",
-            "postalCode": "11277",
-            "addressCountry": "RS"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 44.8765,
-            "longitude": 20.1876
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "08:00",
-              "closes": "20:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Saturday",
-              "opens": "09:00",
-              "closes": "17:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Sunday",
-              "opens": "00:00",
-              "closes": "00:00",
-              "description": "Zatvoreno"
-            }
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
           ],
-          "priceRange": "1000din",
-          "servesCuisine": "Tradicionalna srpska kuhinja",
-          "hasOfferCatalog": {
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "00:00",
+          "closes": "00:00"
+        }
+      ],
+      "servesCuisine": "Tradicionalna srpska kuhinja",
+      "areaServed": {
+        "@type": "City",
+        "name": "Beograd",
+        "sameAs": "https://www.wikidata.org/wiki/Q3711"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Dostava na kućnu adresu",
+          "description": "Dostava na teritoriji celog Beograda je 600 RSD, a za porudžbine preko 2500 RSD dostava je besplatna."
+        },
+        {
+          "@type": "Offer",
+          "name": "Prodaja na pijaci",
+          "description": "Svake subote na pijaci u bloku 44 možete naći naše proizvode i kupiti manje količine"
+        }
+      ],
+      "potentialAction": {
+        "@type": "OrderAction",
+        "target": "https://domaca-hrana.com/kontakt.html"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Domaće kiflice i štrudle",
+        "itemListElement": [
+          {
             "@type": "OfferCatalog",
-            "name": "Bakery Products",
+            "name": "Domaće kiflice",
             "itemListElement": [
               {
-                "@type": "OfferCatalog",
-                "name": "Kiflice",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Kiflice sa sirom",
-                      "description": "Mekane kiflice punjene kvalitetnim sirom",
-                      "sku": "kiflice-sir",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "1000",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Kiflice sa eurokremom",
-                      "description": "Slatke kiflice punjene ukusnim eurokremom",
-                      "sku": "kiflice-eurokrem",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "1100",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Kiflice sa džemom",
-                      "description": "Sočne kiflice punjene domaćim džemom od kajsija",
-                      "sku": "kiflice-dzem",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "1000",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Kiflice sa sirom i šunkom",
-                      "description": "Mekane kiflice punjene šunkom i sirom",
-                      "sku": "kiflice-sir-sunka",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "1200",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Kiflice sa kulenom",
-                      "description": "Mekane kiflice punjene kulenom",
-                      "sku": "kiflice-kulen",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "1200",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Prazne kiflice",
-                      "description": "Klasične kiflice bez punjenja, idealne uz obrok",
-                      "sku": "kiflice-prazne",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "900",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  }
-                ]
+                "@type": "Offer",
+                "price": "1000",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Kiflice sa sirom",
+                  "description": "Mekane kiflice punjene kvalitetnim sirom",
+                  "sku": "kiflice-sir"
+                }
               },
               {
-                "@type": "OfferCatalog",
-                "name": "Štrudle sa makom",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Klasična štrudla sa makom",
-                      "description": "Tradicionalna štrudla sa bogatim punjenjem od maka",
-                      "sku": "strudla-mak",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "900",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Štrudla sa makom i višnjama",
-                      "description": "Štrudla sa kombinacijom maka i sočnih višanja",
-                      "sku": "strudla-mak-visnje",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "1000",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Posna štrudla sa makom",
-                      "description": "Posna varijanta štrudle sa makom, bez jaja i mlečnih proizvoda",
-                      "sku": "strudla-mak-posna",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "900",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  }
-                ]
+                "@type": "Offer",
+                "price": "1200",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Kiflice sa sirom i šunkom",
+                  "description": "Mekane kiflice punjene šunkom i sirom",
+                  "sku": "kiflice-sir-sunka"
+                }
               },
               {
-                "@type": "OfferCatalog",
-                "name": "Štrudle sa orasima",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Klasična štrudla sa orasima",
-                      "description": "Tradicionalna štrudla sa bogatim punjenjem od oraha",
-                      "sku": "strudla-orasi",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "900",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Štrudla sa orasima i medom",
-                      "description": "Štrudla sa orasima i dodatkom domaćeg meda za poseban ukus",
-                      "sku": "strudla-orasi-med",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "1000",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Product",
-                      "name": "Posna štrudla sa orasima",
-                      "description": "Posna varijanta štrudle sa orasima, bez jaja i mlečnih proizvoda",
-                      "sku": "strudla-orasi-posna",
-                      "offers": {
-                        "@type": "Offer",
-                        "price": "900",
-                        "priceCurrency": "RSD",
-                        "unitCode": "KGM",
-                        "unitText": "kilogram"
-                      }
-                    }
-                  }
-                ]
+                "@type": "Offer",
+                "price": "1200",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Kiflice sa kulenom",
+                  "description": "Mekane kiflice punjene kulenom",
+                  "sku": "kiflice-kulen"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "1100",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Kiflice sa eurokremom",
+                  "description": "Slatke kiflice punjene ukusnim eurokremom",
+                  "sku": "kiflice-eurokrem"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "1000",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Kiflice sa džemom",
+                  "description": "Sočne kiflice punjene domaćim džemom od kajsija",
+                  "sku": "kiflice-dzem"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "900",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Prazne kiflice",
+                  "description": "Klasične kiflice bez punjenja, idealne uz obrok",
+                  "sku": "kiflice-prazne"
+                }
               }
             ]
           },
-          "makesOffer": [
-            {
-              "@type": "Offer",
-              "name": "Dostava na kućnu adresu",
-              "description": "Besplatna dostava za porudžbine preko 2500 RSD na teritoriji celog Beograda",
-              "areaServed": {
-                "@type": "City",
-                "name": "Beograd",
-                "sameAs": "https://www.wikidata.org/wiki/Q3711"
-              },
-              "eligibleTransactionVolume": {
-                "@type": "PriceSpecification",
-                "price": "2500",
-                "priceCurrency": "RSD"
-              }
-            },
-            {
-              "@type": "Offer",
-              "name": "Prodaja na pijaci",
-              "description": "Svake subote na pijaci u bloku 44 možete naći naše proizvode i kupiti manje količine",
-              "areaServed": {
-                "@type": "Place",
-                "name": "Pijaca Blok 44, Novi Beograd"
-              }
-            }
-          ],
-          "review": [
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "Marija Petrović"
-              },
-              "datePublished": "2024-03-15",
-              "reviewBody": "Najbolje kiflice koje sam ikada jela! Mekane, sočne i savršeno pečene. Definitivno preporučujem."
-            },
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "Nikola Jovanović"
-              },
-              "datePublished": "2024-02-20",
-              "reviewBody": "Štrudla sa makom je fantastična! Topi se u ustima i ima savršen balans slatkoće. Preporučujem svima!"
-            },
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "Ana Đorđević"
-              },
-              "datePublished": "2024-01-10",
-              "reviewBody": "Redovno naručujem štrudle sa orasima za porodična okupljanja. Svi su oduševljeni ukusom i kvalitetom."
-            }
-          ],
-          "potentialAction": [
-            {
-              "@type": "OrderAction",
-              "target": "https://domaca-hrana.com/kontakt.html"
-            },
-            {
-              "@type": "CommunicateAction",
-              "name": "Pozovite nas",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "tel:+381600409622",
-                "actionPlatform": [
-                  "http://schema.org/DesktopWebPlatform",
-                  "http://schema.org/MobileWebPlatform"
-                ]
-              },
-              "expectsAcceptanceOf": {
+          {
+            "@type": "OfferCatalog",
+            "name": "Štrudle sa makom",
+            "itemListElement": [
+              {
                 "@type": "Offer",
-                "description": "Pozovite nas za porudžbinu ili informacije"
+                "price": "900",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Klasična štrudla sa makom",
+                  "description": "Tradicionalna štrudla sa bogatim punjenjem od maka",
+                  "sku": "strudla-mak"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "1000",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Štrudla sa makom i višnjama",
+                  "description": "Štrudla sa kombinacijom maka i sočnih višanja",
+                  "sku": "strudla-mak-visnje"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "900",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Posna štrudla sa makom",
+                  "description": "Posna varijanta štrudle sa makom, bez jaja i mlečnih proizvoda",
+                  "sku": "strudla-mak-posna"
+                }
               }
-            }
-          ]
-        }
-        </script>
-    
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Štrudle sa orasima",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "price": "900",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Klasična štrudla sa orasima",
+                  "description": "Tradicionalna štrudla sa bogatim punjenjem od oraha",
+                  "sku": "strudla-orasi"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "1000",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Štrudla sa orasima i medom",
+                  "description": "Štrudla sa orasima i dodatkom domaćeg meda za poseban ukus",
+                  "sku": "strudla-orasi-med"
+                }
+              },
+              {
+                "@type": "Offer",
+                "price": "900",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
+                "itemOffered": {
+                  "@type": "Product",
+                  "name": "Posna štrudla sa orasima",
+                  "description": "Posna varijanta štrudle sa orasima, bez jaja i mlečnih proizvoda",
+                  "sku": "strudla-orasi-posna"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+
     <!-- Google Tag Manager (odloženo do prve interakcije ili 8 s posle učitavanja, da ne blokira stranicu) -->
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -436,11 +384,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">Domaće</a>
+                <a href="./">Domaće</a>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Početna</a></li>
+                    <li class="nav-item"><a href="./" class="nav-link active">Početna</a></li>
                     <li class="nav-item"><a href="domace-kiflice.html" class="nav-link">Domaće kiflice</a></li>
                     <li class="nav-item"><a href="strudle-sa-makom.html" class="nav-link">Štrudle sa makom</a></li>
                     <li class="nav-item"><a href="strudle-sa-orasima.html" class="nav-link">Štrudle sa orasima</a></li>
@@ -467,14 +415,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="domace-kiflice.html" class="btn btn-primary">Pogledaj domaće kiflice</a>
             </div>
         </div>
-        <!-- Hero image with picture element for responsive images -->
         <picture>
-            <!-- Mobile image: 640x480 -->
-            <source media="(max-width: 640px)" srcset="slike/domace-kiflice-640w.jpg">
-            <!-- Tablet image: 1024x768 -->
-            <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-1024w.jpg">
-            <!-- Desktop image: 1920x1080 -->
-            <img fetchpriority="high" src="slike/domace-kiflice.jpg" width="1920" height="1080" alt="Sveže pečene domaće kiflice i štrudle sa makom i orasima" class="hero-image" title="Domaće kiflice i štrudle">
+            <source media="(max-width: 640px)" srcset="slike/domace-kiflice-640w.webp">
+            <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-1024w.webp">
+            <img fetchpriority="high" src="slike/domace-kiflice.webp" width="1920" height="1080" alt="Sveže pečene domaće kiflice i štrudle sa makom i orasima" class="hero-image" title="Domaće kiflice i štrudle">
         </picture>
     </section>
         <div class="dekor">
@@ -512,11 +456,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span class="subtitle">Naš najtraženiji proizvod</span>
                 <h2>Domaće kiflice iz Beograda</h2>
                 <p><strong>Domaće kiflice</strong> su naš najtraženiji proizvod. Prave se ručno, svakog dana, po tradicionalnom receptu i bez aditiva i konzervansa, zato su mekane i sočne, a mekoća traje danima.</p>
-                <p>U ponudi su domaće kiflice sa sirom, sa sirom i šunkom, sa kulenom, sa džemom od kajsija, sa eurokremom i prazne kiflice. <strong>Cena domaćih kiflica je od 900 do 1200 RSD po kg.</strong> Dostavljamo na teritoriji celog Beograda u roku od 24 sata, a za porudžbine preko 2500 RSD dostava je besplatna.</p>
+                <p>U ponudi su domaće kiflice sa sirom, sa sirom i šunkom, sa kulenom, sa džemom od kajsija, sa eurokremom i prazne kiflice. <strong>Cena domaćih kiflica je od 900 do 1200 RSD po kg.</strong> Dostavljamo na teritoriji celog Beograda u roku od 24 sata. Dostava je 600 RSD, a za porudžbine preko 2500 RSD je besplatna.</p>
                 <a href="domace-kiflice.html" class="btn btn-primary">Domaće kiflice – vrste i cene</a>
             </div>
             <div class="about-image">
-                <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-9.jpg" width="600" height="400" alt="Domaće kiflice sa susamom na drvenoj dasci" title="Domaće kiflice">
+                <img loading="lazy" class="interactive-div" src="slike/domace-kiflice-novi-beograd-9.webp" width="600" height="400" alt="Domaće kiflice sa susamom na drvenoj dasci" title="Domaće kiflice">
             </div>
         </div>
     </section>
@@ -528,8 +472,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             <div class="products ">
                 <div class="product-card interactive-div">
-                    <!-- Image dimensions: 600x400 -->
-                    <img loading="lazy" src="slike/domace-kiflice-novi-beograd-1.jpg" width="600" height="400" alt="Domaće kiflice sa susamom i semenkama sveže pečene u tepsiji" title="Domaće kiflice">
+                    <img loading="lazy" src="slike/domace-kiflice-novi-beograd-1.webp" width="600" height="400" alt="Domaće kiflice sa susamom i semenkama sveže pečene u tepsiji" title="Domaće kiflice">
                     <div class="product-content">
                         <h3>Domaće kiflice</h3>
                         <p>Mekane i sočne kiflice pravljene po tradicionalnom receptu.</p>
@@ -539,8 +482,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 
                 <div class="product-card interactive-div">
-                    <!-- Image dimensions: 600x400 -->
-                    <img loading="lazy" src="slike/strudla-sa-makom-2.jpg" width="600" height="400" alt="Sveže pečena štrudla sa makom" title="Štrudle sa makom">
+                    <img loading="lazy" src="slike/strudla-sa-makom-2.webp" width="600" height="400" alt="Sveže pečena štrudla sa makom" title="Štrudle sa makom">
                     <div class="product-content">
                         <h3>Štrudle sa makom</h3>
                         <p>Sočne štrudle sa makom koje se tope u ustima.</p>
@@ -550,8 +492,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 
                 <div class="product-card interactive-div">
-                    <!-- Image dimensions: 600x400 -->
-                    <img loading="lazy" src="slike/strudla-sa-orasima-1.jpg" width="600" height="400" alt="Mekana domaća štrudla sa orasima" title="Štrudle sa orasima">
+                    <img loading="lazy" src="slike/strudla-sa-orasima-1.webp" width="600" height="400" alt="Mekana domaća štrudla sa orasima" title="Štrudle sa orasima">
                     <div class="product-content">
                         <h3>Štrudle sa orasima</h3>
                         <p>Bogate štrudle sa orasima po receptu naših baka.</p>
@@ -574,94 +515,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="o-nama.html" class="btn btn-primary">Saznaj više o nama</a>
             </div>
             <div class="about-image">
-                <!-- Image dimensions: 600x800 -->
-                <img loading="lazy" class="interactive-div" src="slike/domaca-hrana-domace-kiflice-2.jpg" width="600" height="600" alt="Priprema domaćih kiflica i štrudli" title="Priprema domaćih kiflica">
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <span class="subtitle">Šta kažu naši kupci</span>
-            <h2>Utisci zadovoljnih kupaca</h2>
-            
-            <div class="testimonials-slider ">
-                <div class="testimonial-slide ">
-                    <div class="testimonial-content interactive-div">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Najbolje kiflice koje sam ikada jela! Mekane, sočne i savršeno pečene. Definitivno preporučujem."</p>
-                        <div class="testimonial-author">Marija Petrović</div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-slide">
-                    <div class="testimonial-content interactive-div">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Štrudla sa makom je fantastična! Topi se u ustima i ima savršen balans slatkoće. Preporučujem svima!"</p>
-                        <div class="testimonial-author">Nikola Jovanović</div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-slide">
-                    <div class="testimonial-content interactive-div">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Redovno naručujem štrudle sa orasima za porodična okupljanja. Svi su oduševljeni ukusom i kvalitetom."</p>
-                        <div class="testimonial-author">Ana Đorđević</div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-slide">
-                    <div class="testimonial-content interactive-div">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Uvek sveži proizvodi. Kiflice su mekane i nakon nekoliko dana, što je retkost!"</p>
-                        <div class="testimonial-author">Milan Stojanović</div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-slide">
-                    <div class="testimonial-content interactive-div">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Posna štrudla sa orasima je savršena za slavske dane. Ukus je fenomenalan i niko ne može da veruje da je posna!"</p>
-                        <div class="testimonial-author">Jelena Nikolić</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="slider-controls">
-                <button class="prev-slide" aria-label="Prethodni slajd"><i class="fas fa-chevron-left"></i></button>
-                <div class="slider-dots"></div>
-                <button class="next-slide" aria-label="Sledeći slajd"><i class="fas fa-chevron-right"></i></button>
+                <img loading="lazy" class="interactive-div" src="slike/domaca-hrana-domace-kiflice-2.webp" width="600" height="600" alt="Priprema domaćih kiflica i štrudli" title="Priprema domaćih kiflica">
             </div>
         </div>
     </section>
@@ -688,7 +542,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="delivery-card interactive-div">
                     <div class="delivery-icon"><i class="fas fa-gift"></i></div>
                     <h3>Besplatna dostava</h3>
-                    <p>Za porudžbine preko <strong>2500 RSD</strong> dostava je <strong>besplatna</strong> na teritoriji Beograda.</p>
+                    <p>Za porudžbine preko <strong>2500 RSD</strong> dostava je <strong>besplatna</strong> na teritoriji Beograda. Za manje porudžbine dostava je <strong>600 RSD</strong>.</p>
                 </div>
             </div>
         </div>
@@ -702,15 +556,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             <div class="partners">
                 <a href="https://katarinaketering.com/" class="partner interactive-div">
-                    <!-- Image dimensions: 200x100 -->
                     <img loading="lazy" src="logos/katarina-ketering-logo.png" width="167" height="120" alt="Katarina ketering" title="Katarina ketering">
                 </a>
                 <a href="https://izrada-sajtova-rs.com/" class="partner interactive-div">
-                    <!-- Image dimensions: 200x100 -->
                     <img loading="lazy" src="logos/izrada-sajtova-rs.svg" width="1447" height="555" alt="Izrada web sajtova" title="Izrada web sajtova">
                 </a>
                 <a href="https://lavandabeograd.com/" class="partner interactive-div">
-                    <!-- Image dimensions: 200x100 -->
                     <img loading="lazy" src="logos/Lavanda.png" width="200" height="100" alt="Prodaja lavande" title="Prodaja lavande">
                 </a>
             </div>
@@ -761,7 +612,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Grobljanska 97, Ugrinovci<br>
                         Zemun, Beograd, 11277<br>
                         Tel: <a href="tel:+381600409622" class="trackcall">+381 60 0409 622</a><br>
-                        Email: <a href="mailto:bobann82@gmail.com">bobann82@gmail.com</a>
+                        Email: <a href="mailto:milovankan@gmail.com">milovankan@gmail.com</a>
                     </address>
                 </div>
             </div>
@@ -789,10 +640,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-

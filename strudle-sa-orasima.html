@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="sr">
+<!--
+  Autorska prava: Domaće (domaca-hrana.com)
+  Sajt napravio: Izrada sajtova RS - https://izrada-sajtova-rs.com/
+-->
+<html lang="sr-Latn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +11,6 @@
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="Mekane štrudle sa orasima pravljene po tradicionalnom receptu. Sveže pečeno svaki dan sa dostavom na kućnu adresu u Beogradu.">
-  <meta name="keywords" content="štrudla sa orasima, strudla sa orasima, mekana domaca strudla sa orasima, posna strudla sa orasima, strudla sa orasima cena">
   <meta name="author" content="Domaće">
   <meta name="robots" content="index, follow">
   
@@ -16,17 +19,18 @@
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="sr_RS">
   <meta property="og:url" content="https://domaca-hrana.com/strudle-sa-orasima.html">
   <meta property="og:title" content="Štrudle sa orasima - Beograd | Domaća hrana">
   <meta property="og:description" content="Mekane štrudle sa orasima pravljene po tradicionalnom receptu. Sveže pečeno svaki dan sa dostavom na kućnu adresu u Beogradu.">
-  <meta property="og:image" content="https://domaca-hrana.com/images/og-image-strudle-orasi.jpg">
+  <meta property="og:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
   
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
-  <meta property="twitter:title" content="Štrudle sa orasima - Beograd | Domaća hrana">
-  <meta property="twitter:description" content="Mekane štrudle sa orasima pravljene po tradicionalnom receptu. Sveže pečeno svaki dan sa dostavom na kućnu adresu u Beogradu.">
-  <meta property="twitter:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://domaca-hrana.com/strudle-sa-orasima.html">
+  <meta name="twitter:title" content="Štrudle sa orasima - Beograd | Domaća hrana">
+  <meta name="twitter:description" content="Mekane štrudle sa orasima pravljene po tradicionalnom receptu. Sveže pečeno svaki dan sa dostavom na kućnu adresu u Beogradu.">
+  <meta name="twitter:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
   
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon-domace-logo-180w.png">
@@ -35,25 +39,31 @@
   
   <!-- Fonts -->
     <link rel="preload" href="fonts/google/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/dm-sans-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/lora-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/great-vibes-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/great-vibes-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Hero slika (LCP) -->
-    <link rel="preload" as="image" href="slike/strudla-sa-orasima-strudla-sa-orasima-640w.jpg" media="(max-width: 640px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/strudla-sa-orasima-strudla-sa-orasima-1024w.jpg" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/strudla-sa-orasima-strudla-sa-orasima.jpg" media="(min-width: 1025px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/strudla-sa-orasima-strudla-sa-orasima-640w.webp" media="(max-width: 640px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/strudla-sa-orasima-strudla-sa-orasima-1024w.webp" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/strudla-sa-orasima-strudla-sa-orasima.webp" media="(min-width: 1025px)" fetchpriority="high">
   
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "Bakery",
+      "@id": "https://domaca-hrana.com/#bakery",
       "name": "Domaće - Najukusnije domaće kiflice i štrudle",
-      "description": "Specijalizovana hrana sa tradicijom - sveže pečene domaće kiflice i štrudle sa makom i orasima, sa dostavom na kućnu adresu u Beogradu.",
       "url": "https://domaca-hrana.com/",
-      "logo": "https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg",
+      "image": "https://domaca-hrana.com/logos/domace-domaca-hrana.jpg",
       "telephone": "+381600409622",
+      "priceRange": "900–1200 RSD",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Grobljanska 97",
@@ -62,163 +72,133 @@
         "postalCode": "11277",
         "addressCountry": "RS"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 44.8765,
-        "longitude": 20.1876
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "08:00",
-          "closes": "20:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "09:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Sunday",
-          "opens": "00:00",
-          "closes": "00:00",
-          "description": "Zatvoreno"
-        }
-      ],
-      "priceRange": "1000din",
-          "servesCuisine": "Tradicionalna srpska kuhinja",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Bakery Products",
+        "name": "Domaće kiflice i štrudle",
         "itemListElement": [
-         
           {
             "@type": "OfferCatalog",
             "name": "Štrudle sa orasima",
             "itemListElement": [
               {
                 "@type": "Offer",
+                "price": "900",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
                 "itemOffered": {
                   "@type": "Product",
                   "name": "Klasična štrudla sa orasima",
                   "description": "Tradicionalna štrudla sa bogatim punjenjem od oraha",
-                  "sku": "strudla-orasi",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "900",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
+                  "sku": "strudla-orasi"
                 }
               },
               {
                 "@type": "Offer",
+                "price": "1000",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
                 "itemOffered": {
                   "@type": "Product",
                   "name": "Štrudla sa orasima i medom",
                   "description": "Štrudla sa orasima i dodatkom domaćeg meda za poseban ukus",
-                  "sku": "strudla-orasi-med",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "1000",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
+                  "sku": "strudla-orasi-med"
                 }
               },
               {
                 "@type": "Offer",
+                "price": "900",
+                "priceCurrency": "RSD",
+                "eligibleQuantity": {
+                  "@type": "QuantitativeValue",
+                  "value": 1,
+                  "unitCode": "KGM"
+                },
                 "itemOffered": {
                   "@type": "Product",
                   "name": "Posna štrudla sa orasima",
                   "description": "Posna varijanta štrudle sa orasima, bez jaja i mlečnih proizvoda",
-                  "sku": "strudla-orasi-posna",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "900",
-                    "priceCurrency": "RSD",
-                    "unitCode": "KGM",
-                    "unitText": "kilogram"
-                  }
+                  "sku": "strudla-orasi-posna"
                 }
               }
             ]
           }
         ]
-      },
-      "makesOffer": [
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-          "@type": "Offer",
-          "name": "Dostava na kućnu adresu",
-          "description": "Besplatna dostava za porudžbine preko 2500 RSD na teritoriji celog Beograda",
-          "areaServed": {
-            "@type": "City",
-            "name": "Beograd",
-            "sameAs": "https://www.wikidata.org/wiki/Q3711"
-          },
-          "eligibleTransactionVolume": {
-            "@type": "PriceSpecification",
-            "price": "2500",
-            "priceCurrency": "RSD"
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Početna",
+          "item": "https://domaca-hrana.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Štrudle sa orasima",
+          "item": "https://domaca-hrana.com/strudle-sa-orasima.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Koliko košta štrudla sa orasima?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Klasična i posna štrudla sa orasima su 900 RSD po kg, a štrudla sa orasima i medom 1000 RSD po kg. Jedan kilogram su otprilike dve štrudle. Sve cene pogledajte na stranici cene."
           }
         },
         {
-          "@type": "Offer",
-          "name": "Prodaja na pijaci",
-          "description": "Svake subote na pijaci u bloku 44 možete naći naše proizvode i kupiti manje količine",
-          "areaServed": {
-            "@type": "Place",
-            "name": "Pijaca Blok 44, Novi Beograd"
+          "@type": "Question",
+          "name": "Kako mogu da naručim štrudlu sa orasima?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Štrudlu sa orasima možete naručiti telefonom na +381 60 0409 622 ili preko kontakt forme. Dovoljno je da naručite 24 sata unapred."
           }
-        }
-      ],
-      "review": [
-        
-        {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Ana Đorđević"
-          },
-          "datePublished": "2024-01-10",
-          "reviewBody": "Redovno naručujem štrudle sa orasima za porodična okupljanja. Svi su oduševljeni ukusom i kvalitetom."
-        }
-      ],
-      "potentialAction": [
-        {
-          "@type": "OrderAction",
-          "target": "https://domaca-hrana.com/kontakt.html"
         },
         {
-          "@type": "CommunicateAction",
-          "name": "Pozovite nas",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "tel:+381600409622",
-            "actionPlatform": [
-              "http://schema.org/DesktopWebPlatform",
-              "http://schema.org/MobileWebPlatform"
-            ]
-          },
-          "expectsAcceptanceOf": {
-            "@type": "Offer",
-            "description": "Pozovite nas za porudžbinu ili informacije"
+          "@type": "Question",
+          "name": "Da li dostavljate štrudle sa orasima u Beogradu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da, dostavljamo na teritoriji celog Beograda u roku od 24 sata od porudžbine. Dostava je 600 RSD, a za porudžbine preko 2500 RSD je besplatna."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Da li imate posnu štrudlu sa orasima?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da. Posna štrudla sa orasima se pravi bez jaja i mlečnih proizvoda, a cena je 900 RSD po kg."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Koliko dugo štrudla sa orasima ostaje sveža?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Najbolje su u roku od 2-3 dana od pečenja. Čuvajte ih na sobnoj temperaturi u zatvorenoj posudi, a za duže čuvanje možete ih zamrznuti."
           }
         }
       ]
     }
-    </script>
-    
+  ]
+}
+</script>
+
     <!-- Google Tag Manager (odloženo do prve interakcije ili 8 s posle učitavanja, da ne blokira stranicu) -->
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -253,11 +233,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <header class="header">
       <div class="container">
           <div class="logo">
-              <a href="index.html">Domaće</a>
+              <a href="./">Domaće</a>
           </div>
           <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Početna</a></li>
+                    <li class="nav-item"><a href="./" class="nav-link">Početna</a></li>
                     <li class="nav-item"><a href="domace-kiflice.html" class="nav-link">Domaće kiflice</a></li>
                     <li class="nav-item"><a href="strudle-sa-makom.html" class="nav-link">Štrudle sa makom</a></li>
                     <li class="nav-item"><a href="strudle-sa-orasima.html" class="nav-link active">Štrudle sa orasima</a></li>
@@ -284,12 +264,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
       </div>
         <picture>
-            <!-- Mobile image: 640x480 -->
-            <source media="(max-width: 640px)" srcset="slike/strudla-sa-orasima-strudla-sa-orasima-640w.jpg">
-            <!-- Tablet image: 1024x768 -->
-            <source media="(max-width: 1024px)" srcset="slike/strudla-sa-orasima-strudla-sa-orasima-1024w.jpg">
-            <!-- Desktop image: 1920x1080 -->
-            <img fetchpriority="high" src="slike/strudla-sa-orasima-strudla-sa-orasima.jpg" width="1920" height="1080" alt="strudle sa orasima novi beograd" class="hero-image" title="Štrudle sa orasima">
+            <source media="(max-width: 640px)" srcset="slike/strudla-sa-orasima-strudla-sa-orasima-640w.webp">
+            <source media="(max-width: 1024px)" srcset="slike/strudla-sa-orasima-strudla-sa-orasima-1024w.webp">
+            <img fetchpriority="high" src="slike/strudla-sa-orasima-strudla-sa-orasima.webp" width="1920" height="1080" alt="strudle sa orasima novi beograd" class="hero-image" title="Štrudle sa orasima">
         </picture>
   </section>
 
@@ -306,16 +283,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
           <div class="product-gallery">
               <div class="gallery-grid">
-                  <!-- Image dimensions: 600x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-1.jpg" width="600" height="400" alt="strudla sa orasima cena" title="Štrudle sa orasima">
-                  <!-- Image dimensions: 600x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-2.jpg" width="600" height="400" alt="mekana domaca strudla sa orasima" title="Sveže pečene štrudle sa orasima">
-                  <!-- Image dimensions: 600x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-3.jpg" width="600" height="399" alt="posna strudla sa orasima" title="Posne štrudle sa orasima">
-                  <!-- Image dimensions: 600x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-4.jpg" width="600" height="400" alt="strudla sa orasima i medom" title="Štrudle sa orasima i medom">
-                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-5.jpg" width="600" height="400" alt="strudla sa orasima i medom" title="Štrudle sa orasima i medom">
-                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-6.jpg" width="600" height="400" alt="strudla sa orasima i medom" title="Štrudle sa orasima i medom">
+                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-1.webp" width="600" height="400" alt="strudla sa orasima cena" title="Štrudle sa orasima">
+                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-2.webp" width="600" height="400" alt="mekana domaca strudla sa orasima" title="Sveže pečene štrudle sa orasima">
+                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-3.webp" width="600" height="399" alt="posna strudla sa orasima" title="Posne štrudle sa orasima">
+                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-4.webp" width="600" height="400" alt="strudla sa orasima i medom" title="Štrudle sa orasima i medom">
+                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-5.webp" width="600" height="400" alt="strudla sa orasima i medom" title="Štrudle sa orasima i medom">
+                  <img loading="lazy" class="interactive-div" src="slike/strudla-sa-orasima-6.webp" width="600" height="400" alt="strudla sa orasima i medom" title="Štrudle sa orasima i medom">
               </div>
           </div>
           
@@ -346,7 +319,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
           <div class="order-info">
               <h3>Kako naručiti</h3>
-              <p>Naše štrudle sa orasima možete naručiti telefonom, putem kontakt forme na našem sajtu ili direktnom porukom na društvenim mrežama. Dostavljamo na teritoriji celog Beograda u roku od 24 sata od porudžbine.</p>
+              <p>Naše štrudle sa orasima možete naručiti telefonom ili putem kontakt forme na našem sajtu. Dostavljamo na teritoriji celog Beograda u roku od 24 sata od porudžbine. Dostava je 600 RSD, a za porudžbine preko 2500 RSD je besplatna.</p>
               <a href="kontakt.html" class="btn btn-primary">Naruči odmah</a>
           </div>
       </div>
@@ -373,49 +346,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </div>
               
               <div class="ingredients-image">
-                  <!-- Image dimensions: 500x400 -->
-                  <img loading="lazy" class="interactive-div" src="slike/strudle-sa-orasima-novi-beograd.jpg" width="500" height="400" alt="sastojci za strudlu sa orasima" title="Sastojci za štrudle sa orasima">
+                  <img loading="lazy" class="interactive-div" src="slike/strudle-sa-orasima-novi-beograd.webp" width="500" height="400" alt="sastojci za strudlu sa orasima" title="Sastojci za štrudle sa orasima">
               </div>
           </div>
       </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials-section product-testimonials">
+  <!-- FAQ Section -->
+  <section class="faq-section">
       <div class="container">
-          <span class="subtitle">Šta kažu naši kupci</span>
-          <h2>Utisci o štrudlama sa orasima</h2>
-          
-          <div class="testimonials-slider">
-              <div class="testimonial-slide">
-                  <div class="testimonial-content interactive-div">
-                      <div class="stars">★★★★★</div>
-                      <p>"Najbolja štrudla sa orasima koju sam ikada probala! Mekana, sočna i savršeno zaslađena. Definitivno ću naručiti ponovo."</p>
-                      <div class="testimonial-author">Jelena Nikolić</div>
+          <span class="subtitle">Česta pitanja</span>
+          <h2>Pitanja o štrudlama sa orasima</h2>
+
+          <div class="faq-container">
+              <div class="faq-item interactive-div">
+                  <div class="faq-question">
+                      <h3>Koliko košta štrudla sa orasima?</h3>
+                      <span class="faq-toggle">+</span>
+                  </div>
+                  <div class="faq-answer">
+                      <p>Klasična i posna štrudla sa orasima su 900 RSD po kg, a štrudla sa orasima i medom 1000 RSD po kg. Jedan kilogram su otprilike dve štrudle. Sve cene pogledajte na stranici <a href="cene.html">cene</a>.</p>
                   </div>
               </div>
-              
-              <div class="testimonial-slide">
-                  <div class="testimonial-content interactive-div">
-                      <div class="stars">★★★★★</div>
-                      <p>"Štrudla sa orasima i medom je fantastična kombinacija! Topi se u ustima i ima savršen balans slatkoće. Preporučujem svima!"</p>
-                      <div class="testimonial-author">Milan Stojanović</div>
+
+              <div class="faq-item interactive-div">
+                  <div class="faq-question">
+                      <h3>Kako mogu da naručim štrudlu sa orasima?</h3>
+                      <span class="faq-toggle">+</span>
+                  </div>
+                  <div class="faq-answer">
+                      <p>Štrudlu sa orasima možete naručiti telefonom na <a href="tel:+381600409622" class="trackcall">+381 60 0409 622</a> ili preko <a href="kontakt.html">kontakt forme</a>. Dovoljno je da naručite 24 sata unapred.</p>
                   </div>
               </div>
-              
-              <div class="testimonial-slide">
-                  <div class="testimonial-content interactive-div">
-                      <div class="stars">★★★★★</div>
-                      <p>"Posna štrudla sa orasima je savršena za slavske dane. Ukus je fenomenalan i niko ne može da veruje da je posna!"</p>
-                      <div class="testimonial-author">Ana Đorđević</div>
+
+              <div class="faq-item interactive-div">
+                  <div class="faq-question">
+                      <h3>Da li dostavljate štrudle sa orasima u Beogradu?</h3>
+                      <span class="faq-toggle">+</span>
+                  </div>
+                  <div class="faq-answer">
+                      <p>Da, dostavljamo na teritoriji celog Beograda u roku od 24 sata od porudžbine. Dostava je 600 RSD, a za porudžbine preko 2500 RSD je besplatna.</p>
                   </div>
               </div>
-          </div>
-          
-          <div class="slider-controls">
-              <button class="prev-slide" aria-label="Prethodni slajd">❮</button>
-              <div class="slider-dots"></div>
-              <button class="next-slide" aria-label="Sledeći slajd">❯</button>
+
+              <div class="faq-item interactive-div">
+                  <div class="faq-question">
+                      <h3>Da li imate posnu štrudlu sa orasima?</h3>
+                      <span class="faq-toggle">+</span>
+                  </div>
+                  <div class="faq-answer">
+                      <p>Da. Posna štrudla sa orasima se pravi bez jaja i mlečnih proizvoda, a cena je 900 RSD po kg.</p>
+                  </div>
+              </div>
+
+              <div class="faq-item interactive-div">
+                  <div class="faq-question">
+                      <h3>Koliko dugo štrudla sa orasima ostaje sveža?</h3>
+                      <span class="faq-toggle">+</span>
+                  </div>
+                  <div class="faq-answer">
+                      <p>Najbolje su u roku od 2-3 dana od pečenja. Čuvajte ih na sobnoj temperaturi u zatvorenoj posudi, a za duže čuvanje možete ih zamrznuti.</p>
+                  </div>
+              </div>
           </div>
       </div>
   </section>
@@ -464,7 +456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Grobljanska 97, Ugrinovci<br>
                         Zemun, Beograd, 11277<br>
                         Tel: <a href="tel:+381600409622" class="trackcall">+381 60 0409 622</a><br>
-                        Email: <a href="mailto:bobann82@gmail.com">bobann82@gmail.com</a>
+                        Email: <a href="mailto:milovankan@gmail.com">milovankan@gmail.com</a>
                     </address>
                 </div>
             </div>
@@ -489,7 +481,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-

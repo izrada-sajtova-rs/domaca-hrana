@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="sr">
+<!--
+  Autorska prava: Domaće (domaca-hrana.com)
+  Sajt napravio: Izrada sajtova RS - https://izrada-sajtova-rs.com/
+-->
+<html lang="sr-Latn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +11,6 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Kontaktirajte nas za porudžbine domaćih kiflica i štrudli. Dostava na teritoriji Beograda u roku od 24 sata.">
-    <meta name="keywords" content="domaće kiflice, domace kiflice cena, domace kiflice novi beograd, štrudle sa makom, strudla sa makom, štrudla sa orasima, strudla sa orasima, kontakt, porudžbina">
     <meta name="author" content="Domaće">
     <meta name="robots" content="index, follow">
     
@@ -16,17 +19,18 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="sr_RS">
     <meta property="og:url" content="https://domaca-hrana.com/kontakt.html">
     <meta property="og:title" content="Domaće kiflice i štrudle | Kontakt">
     <meta property="og:description" content="Kontaktirajte nas za porudžbine domaćih kiflica i štrudli. Dostava na teritoriji Beograda u roku od 24 sata.">
-    <meta property="og:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+    <meta property="og:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://domaca-hrana.com/kontakt.html">
-    <meta property="twitter:title" content="Domaće kiflice i štrudle | Kontakt">
-    <meta property="twitter:description" content="Kontaktirajte nas za porudžbine domaćih kiflica i štrudli. Dostava na teritoriji Beograda u roku od 24 sata.">
-    <meta property="twitter:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://domaca-hrana.com/kontakt.html">
+    <meta name="twitter:title" content="Domaće kiflice i štrudle | Kontakt">
+    <meta name="twitter:description" content="Kontaktirajte nas za porudžbine domaćih kiflica i štrudli. Dostava na teritoriji Beograda u roku od 24 sata.">
+    <meta name="twitter:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon-domace-logo-180w.png">
@@ -35,84 +39,114 @@
     
     <!-- Fonts -->
     <link rel="preload" href="fonts/google/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/dm-sans-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/lora-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/great-vibes-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/great-vibes-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Hero slika (LCP) -->
-    <link rel="preload" as="image" href="slike/domace-kiflice-kontakt-640w.jpg" media="(max-width: 640px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/domace-kiflice-kontakt-1024w.jpg" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/domace-kiflice-kontakt.jpg" media="(min-width: 1025px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-kontakt-640w.webp" media="(max-width: 640px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-kontakt-1024w.webp" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-kontakt.webp" media="(min-width: 1025px)" fetchpriority="high">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Bakery",
+      "@id": "https://domaca-hrana.com/#bakery",
+      "name": "Domaće - Najukusnije domaće kiflice i štrudle",
+      "url": "https://domaca-hrana.com/",
+      "image": "https://domaca-hrana.com/logos/domace-domaca-hrana.jpg",
+      "telephone": "+381600409622",
+      "priceRange": "900–1200 RSD",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Grobljanska 97",
+        "addressLocality": "Ugrinovci",
+        "addressRegion": "Beograd",
+        "postalCode": "11277",
+        "addressCountry": "RS"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-          "@context": "https://schema.org",
-          "@type": "Bakery",
-          "name": "Domaće - Najukusnije domaće kiflice i štrudle",
-          "description": "Specijalizovana hrana sa tradicijom - sveže pečene domaće kiflice i štrudle sa makom i orasima, sa dostavom na kućnu adresu u Beogradu.",
-          "url": "https://domaca-hrana.com/",
-          "logo": "https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg",
-          "telephone": "+381600409622",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Grobljanska 97",
-            "addressLocality": "Ugrinovci",
-            "addressRegion": "Beograd",
-            "postalCode": "11277",
-            "addressCountry": "RS"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 44.8765,
-            "longitude": 20.1876
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "08:00",
-              "closes": "20:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Saturday",
-              "opens": "09:00",
-              "closes": "17:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Sunday",
-              "opens": "00:00",
-              "closes": "00:00",
-              "description": "Zatvoreno"
-            }
-          ],
-          "potentialAction": [
-            {
-              "@type": "OrderAction",
-              "target": "https://domaca-hrana.com/kontakt.html"
-            },
-            {
-              "@type": "CommunicateAction",
-              "name": "Pozovite nas",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "tel:+381600409622",
-                "actionPlatform": [
-                  "http://schema.org/DesktopWebPlatform",
-                  "http://schema.org/MobileWebPlatform"
-                ]
-              },
-              "expectsAcceptanceOf": {
-                "@type": "Offer",
-                "description": "Pozovite nas za porudžbinu ili informacije"
-              }
-            }
-          ]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Početna",
+          "item": "https://domaca-hrana.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kontakt",
+          "item": "https://domaca-hrana.com/kontakt.html"
         }
-        </script>
-    
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kako mogu da naručim vaše proizvode?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Naše proizvode možete naručiti telefonom ili putem kontakt forme na našem sajtu. Nakon što primimo vašu porudžbinu, kontaktiraćemo vas radi potvrde i dogovora oko dostave."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Koliko košta dostava?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dostava na teritoriji celog Beograda je 600 RSD, a za porudžbine preko 2500 RSD dostava je besplatna."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Koji je minimalni iznos porudžbine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minimalni iznos porudžbine je 1000 RSD."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Koliko unapred treba da naručim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Za standardne porudžbine dovoljno je da naručite 24 sata unapred. Za veće porudžbine (preko 5kg) ili za posebne prilike, preporučujemo da naručite najmanje 2-3 dana unapred kako bismo mogli da ispunimo vaše zahteve."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Koliko dugo vaši proizvodi ostaju sveži?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Naši proizvodi su najbolji kada se konzumiraju u roku od 2-3 dana od pečenja. Mogu se čuvati na sobnoj temperaturi u zatvorenoj posudi ili zamrznuti za duže čuvanje."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Da li imate još proizvoda?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da imamo još proizvoda. Možete naručiti torte, kolače, razna jela domaće kuhinje, mi ćemo vam spremiti i doneti. Takođe prodajemo biljke iz naše bašte kao što su: lavanda, ruzmarin, šumske jagode, crne ribizle i tako dalje. Za biljke posetite naš websajt posvećen našoj bašti: lavandabeograd.com"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
     <!-- Google Tag Manager (odloženo do prve interakcije ili 8 s posle učitavanja, da ne blokira stranicu) -->
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -147,11 +181,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">Domaće</a>
+                <a href="./">Domaće</a>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link ">Početna</a></li>
+                    <li class="nav-item"><a href="./" class="nav-link ">Početna</a></li>
                     <li class="nav-item"><a href="domace-kiflice.html" class="nav-link">Domaće kiflice</a></li>
                     <li class="nav-item"><a href="strudle-sa-makom.html" class="nav-link">Štrudle sa makom</a></li>
                     <li class="nav-item"><a href="strudle-sa-orasima.html" class="nav-link">Štrudle sa orasima</a></li>
@@ -178,12 +212,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
         <picture>
-            <!-- Mobile image: 640x480 -->
-            <source media="(max-width: 640px)" srcset="slike/domace-kiflice-kontakt-640w.jpg">
-            <!-- Tablet image: 1024x768 -->
-            <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-kontakt-1024w.jpg">
-            <!-- Desktop image: 1920x1080 -->
-            <img fetchpriority="high" src="slike/domace-kiflice-kontakt.jpg" width="1920" height="1080" alt="domace kiflice kontakt porudzbina" class="hero-image" title="Kontaktirajte nas">
+            <source media="(max-width: 640px)" srcset="slike/domace-kiflice-kontakt-640w.webp">
+            <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-kontakt-1024w.webp">
+            <img fetchpriority="high" src="slike/domace-kiflice-kontakt.webp" width="1920" height="1080" alt="domace kiflice kontakt porudzbina" class="hero-image" title="Kontaktirajte nas">
         </picture>
     </section>
 
@@ -215,7 +246,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="info-icon">✉️</div>
                         <div class="info-content">
                             <h3>Email</h3>
-                            <p><a href="mailto:bobann82@gmail.com">bobann82@gmail.com</a></p>
+                            <p><a href="mailto:milovankan@gmail.com">milovankan@gmail.com</a></p>
                         </div>
                     </div>
                     
@@ -227,57 +258,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                     
-                    <!-- <div class="social-links">
-                        <h3>Pratite nas</h3>
-                        <div class="social-icons">
-                            <a href="#" class="social-icon" aria-label="Facebook">FB</a>
-                            <a href="#" class="social-icon" aria-label="Instagram">IG</a>
-                            <a href="#" class="social-icon" aria-label="Twitter">TW</a>
-                        </div>
-                    </div> -->
                 </div>
                 
                 <div class="contact-form-container interactive-div">
                     <span class="subtitle">Pošaljite nam poruku</span>
                     <h2>Kontakt forma</h2>
                     
-                    <form class="contact-form" action="https://formsubmit.co/bobann82@gmail.com" method="POST">
+                    <form class="contact-form" action="https://formsubmit.co/milovankan@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nova poruka sa sajta domaca-hrana.com">
+                        <input type="hidden" name="_next" value="https://domaca-hrana.com/hvala.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
                         <div class="form-group">
                             <label for="name">Ime i prezime</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
                         </div>
-                         
-                        <!-- <div class="form-group">
-                            <label for="phone">Telefon</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Predmet</label>
-                            <select id="subject" name="subject" required>
-                                <option value="" disabled selected>Izaberite predmet</option>
-                                <option value="porudzbina">Porudžbina</option>
-                                <option value="upit">Upit o proizvodima</option>
-                                <option value="saradnja">Poslovna saradnja</option>
-                                <option value="ostalo">Ostalo</option>
-                            </select>
-                        </div> -->
-                        
+
                         <div class="form-group">
                             <label for="message">Poruka</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        
+
                         <div class="form-group form-checkbox">
                             <input type="checkbox" id="privacy" name="privacy" required>
                             <label for="privacy">Slažem se sa <a href="politika-privatnosti.html">politikom privatnosti</a></label>
                         </div>
-                        
+
                         <button type="submit" class="btn btn-primary">Pošalji poruku</button>
                     </form>
                 </div>
@@ -310,7 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Naše proizvode možete naručiti telefonom, putem kontakt forme na našem sajtu. Nakon što primimo vašu porudžbinu, kontaktiraćemo vas radi potvrde i dogovora oko dostave.</p>
+                        <p>Naše proizvode možete naručiti telefonom ili putem kontakt forme na našem sajtu. Nakon što primimo vašu porudžbinu, kontaktiraćemo vas radi potvrde i dogovora oko dostave.</p>
                     </div>
                 </div>
                 
@@ -320,7 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Za porudžbine preko 2500 RSD dostava je besplatna na teritoriji celog Beograda.</p>
+                        <p>Dostava na teritoriji celog Beograda je 600 RSD, a za porudžbine preko 2500 RSD dostava je besplatna.</p>
                     </div>
                 </div>
                 
@@ -344,15 +356,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
                 
-                <!-- <div class="faq-item interactive-div">
-                    <div class="faq-question">
-                        <h3>Da li vaši proizvodi sadrže alergene?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Da, naši proizvodi mogu sadržati gluten, mleko, jaja i orašaste plodove. Na zahtev možemo pripremiti određene proizvode bez nekih alergena, ali naša proizvodnja nije potpuno odvojena, tako da tragovi alergena mogu biti prisutni.</p>
-                    </div>
-                </div> -->
                 
                 <div class="faq-item interactive-div">
                     <div class="faq-question">
@@ -408,7 +411,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Grobljanska 97, Ugrinovci<br>
                         Zemun, Beograd, 11277<br>
                         Tel: <a href="tel:+381600409622" class="trackcall">+381 60 0409 622</a><br>
-                        Email: <a href="mailto:bobann82@gmail.com">bobann82@gmail.com</a>
+                        Email: <a href="mailto:milovankan@gmail.com">milovankan@gmail.com</a>
                     </address>
                 </div>
             </div>
@@ -433,6 +436,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-

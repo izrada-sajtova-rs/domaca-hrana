@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="sr">
+<!--
+  Autorska prava: Domaće (domaca-hrana.com)
+  Sajt napravio: Izrada sajtova RS - https://izrada-sajtova-rs.com/
+-->
+<html lang="sr-Latn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +11,6 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Saznajte više o nama i našoj tradiciji pravljenja domaćih kiflica i štrudli. Porodični recept koji se prenosi generacijama.">
-    <meta name="keywords" content="domaće kiflice, domace kiflice novi beograd, štrudle sa makom, strudla sa makom, štrudla sa orasima, strudla sa orasima, tradicija, porodični recept">
     <meta name="author" content="Domaće">
     <meta name="robots" content="index, follow">
     
@@ -16,17 +19,18 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="sr_RS">
     <meta property="og:url" content="https://domaca-hrana.com/o-nama.html">
     <meta property="og:title" content="Domaće kiflice i štrudle | O nama">
     <meta property="og:description" content="Saznajte više o nama i našoj tradiciji pravljenja domaćih kiflica i štrudli. Porodični recept koji se prenosi generacijama.">
-    <meta property="og:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+    <meta property="og:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://domaca-hrana.com/o-nama.html">
-    <meta property="twitter:title" content="Domaće kiflice i štrudle | O nama">
-    <meta property="twitter:description" content="Saznajte više o nama i našoj tradiciji pravljenja domaćih kiflica i štrudli. Porodični recept koji se prenosi generacijama.">
-    <meta property="twitter:image" content="https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://domaca-hrana.com/o-nama.html">
+    <meta name="twitter:title" content="Domaće kiflice i štrudle | O nama">
+    <meta name="twitter:description" content="Saznajte više o nama i našoj tradiciji pravljenja domaćih kiflica i štrudli. Porodični recept koji se prenosi generacijama.">
+    <meta name="twitter:image" content="https://domaca-hrana.com/logos/domace-domaca-hrana.jpg">
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon-domace-logo-180w.png">
@@ -35,154 +39,61 @@
     
     <!-- Fonts -->
     <link rel="preload" href="fonts/google/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/dm-sans-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/lora-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/google/great-vibes-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/google/great-vibes-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Hero slika (LCP) -->
-    <link rel="preload" as="image" href="slike/domace-kiflice-domace-640w.jpg" media="(max-width: 640px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/domace-kiflice-domace-1024w.jpg" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
-    <link rel="preload" as="image" href="slike/domace-kiflice-domace.jpg" media="(min-width: 1025px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-domace-640w.webp" media="(max-width: 640px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-domace-1024w.webp" media="(min-width: 641px) and (max-width: 1024px)" fetchpriority="high">
+    <link rel="preload" as="image" href="slike/domace-kiflice-domace.webp" media="(min-width: 1025px)" fetchpriority="high">
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Bakery",
+      "@id": "https://domaca-hrana.com/#bakery",
+      "name": "Domaće - Najukusnije domaće kiflice i štrudle",
+      "url": "https://domaca-hrana.com/",
+      "image": "https://domaca-hrana.com/logos/domace-domaca-hrana.jpg",
+      "telephone": "+381600409622",
+      "priceRange": "900–1200 RSD",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Grobljanska 97",
+        "addressLocality": "Ugrinovci",
+        "addressRegion": "Beograd",
+        "postalCode": "11277",
+        "addressCountry": "RS"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
         {
-          "@context": "https://schema.org",
-          "@type": "Bakery",
-          "name": "Domaće - Najukusnije domaće kiflice i štrudle",
-          "description": "Specijalizovana hrana sa tradicijom - sveže pečene domaće kiflice i štrudle sa makom i orasima, sa dostavom na kućnu adresu u Beogradu.",
-          "url": "https://domaca-hrana.com/",
-          "logo": "https://domaca-hrana.com/logos/Domaće-domaća-hrana.jpg",
-          "telephone": "+381600409622",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Grobljanska 97",
-            "addressLocality": "Ugrinovci",
-            "addressRegion": "Beograd",
-            "postalCode": "11277",
-            "addressCountry": "RS"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 44.8765,
-            "longitude": 20.1876
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-              "opens": "08:00",
-              "closes": "20:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Saturday",
-              "opens": "09:00",
-              "closes": "17:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": "Sunday",
-              "opens": "00:00",
-              "closes": "00:00",
-              "description": "Zatvoreno"
-            }
-          ],
-          "makesOffer": [
-            {
-              "@type": "Offer",
-              "name": "Dostava na kućnu adresu",
-              "description": "Besplatna dostava za porudžbine preko 2500 RSD na teritoriji celog Beograda",
-              "areaServed": {
-                "@type": "City",
-                "name": "Beograd",
-                "sameAs": "https://www.wikidata.org/wiki/Q3711"
-              },
-              "eligibleTransactionVolume": {
-                "@type": "PriceSpecification",
-                "price": "2500",
-                "priceCurrency": "RSD"
-              }
-            },
-            {
-              "@type": "Offer",
-              "name": "Prodaja na pijaci",
-              "description": "Svake subote na pijaci u bloku 44 možete naći naše proizvode i kupiti manje količine",
-              "areaServed": {
-                "@type": "Place",
-                "name": "Pijaca Blok 44, Novi Beograd"
-              }
-            }
-          ],
-          "review": [
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "Marija Petrović"
-              },
-              "datePublished": "2024-03-15",
-              "reviewBody": "Najbolje kiflice koje sam ikada jela! Mekane, sočne i savršeno pečene. Definitivno preporučujem."
-            },
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "Nikola Jovanović"
-              },
-              "datePublished": "2024-02-20",
-              "reviewBody": "Štrudla sa makom je fantastična! Topi se u ustima i ima savršen balans slatkoće. Preporučujem svima!"
-            },
-            {
-              "@type": "Review",
-              "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "5",
-                "bestRating": "5"
-              },
-              "author": {
-                "@type": "Person",
-                "name": "Ana Đorđević"
-              },
-              "datePublished": "2024-01-10",
-              "reviewBody": "Redovno naručujem štrudle sa orasima za porodična okupljanja. Svi su oduševljeni ukusom i kvalitetom."
-            }
-          ],
-          "potentialAction": [
-            {
-              "@type": "OrderAction",
-              "target": "https://domaca-hrana.com/kontakt.html"
-            },
-            {
-              "@type": "CommunicateAction",
-              "name": "Pozovite nas",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "tel:+381600409622",
-                "actionPlatform": [
-                  "http://schema.org/DesktopWebPlatform",
-                  "http://schema.org/MobileWebPlatform"
-                ]
-              },
-              "expectsAcceptanceOf": {
-                "@type": "Offer",
-                "description": "Pozovite nas za porudžbinu ili informacije"
-              }
-            }
-          ]
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Početna",
+          "item": "https://domaca-hrana.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "O nama",
+          "item": "https://domaca-hrana.com/o-nama.html"
         }
-        </script>
-    
+      ]
+    }
+  ]
+}
+</script>
+
     <!-- Google Tag Manager (odloženo do prve interakcije ili 8 s posle učitavanja, da ne blokira stranicu) -->
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -217,11 +128,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header class="header">
         <div class="container">
             <div class="logo">
-                <a href="index.html">Domaće</a>
+                <a href="./">Domaće</a>
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Početna</a></li>
+                    <li class="nav-item"><a href="./" class="nav-link">Početna</a></li>
                     <li class="nav-item"><a href="domace-kiflice.html" class="nav-link">Domaće kiflice</a></li>
                     <li class="nav-item"><a href="strudle-sa-makom.html" class="nav-link">Štrudle sa makom</a></li>
                     <li class="nav-item"><a href="strudle-sa-orasima.html" class="nav-link">Štrudle sa orasima</a></li>
@@ -247,14 +158,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>Upoznajte nas i našu tradiciju pravljenja domaćih kiflica i štrudli.</p>
             </div>
         </div>
-        <!-- Hero image with picture element for responsive images -->
         <picture>
-            <!-- Mobile image: 640x480 -->
-            <source media="(max-width: 640px)" srcset="slike/domace-kiflice-domace-640w.jpg">
-            <!-- Tablet image: 1024x768 -->
-            <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-domace-1024w.jpg">
-            <!-- Desktop image: 1920x1080 -->
-            <img fetchpriority="high" src="slike/domace-kiflice-domace.jpg" width="1920" height="1080" alt="domace kiflice i strudle tradicija porodicni recept" class="hero-image" title="Naša tradicija">
+            <source media="(max-width: 640px)" srcset="slike/domace-kiflice-domace-640w.webp">
+            <source media="(max-width: 1024px)" srcset="slike/domace-kiflice-domace-1024w.webp">
+            <img fetchpriority="high" src="slike/domace-kiflice-domace.webp" width="1920" height="1080" alt="domace kiflice i strudle tradicija porodicni recept" class="hero-image" title="Naša tradicija">
         </picture>
     </section>
 
@@ -264,36 +171,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="story-content">
                 <span class="subtitle">Kako je sve počelo</span>
                 <h2>Naša priča</h2>
-                    <!-- <p class="first-letter">Priča o našim <strong>domaćim kiflicama i štrudlama</strong> počela je pre više od <strong>25 godina</strong>, 
-                        kada je naša baka Milica odlučila da svoje recepte, koji su se prenosili s generacije na generaciju, podeli sa komšilukom. 
-                        Ono što je počelo kao mali hobi, ubrzo je preraslo u <strong>porodični posao</strong> koji danas vodi već treća generacija naše porodice.
-                    </p>
-                <p class="first-letter">Priča o našim <strong>domaćim kiflicama i štrudlama</strong> počela je <strong>jako davno</strong>, 
-                    zaboravljeno tačno kada. Kiflice pravimo oduvek, to je deo domaće kuhinje i Srpske tradicije. Recept i isustvo smo 
-                    dobili od naših predaka koji su isto to radili. Naše poreklo potiče sa Jugoistočne Srbije. Ali danas živimo u 
-                    Sremu, tačnije u Ugrinovcima. Mestu gde i dalje postoje domaće životinje i bašte koje domaćinstva neguju. Mi imamo 
-                    našu baštu i naše kvalitetne domaće proizvode. Domaća hrana se sprema konstantno i uvek u našoj kući. 
-                    
-                    Veći broj godina 
-                    kiflice i štrudle prodajemo na Novo Beogradskoj pijaci. To i dalje radimo, ali nismo redovni jer nam websajt omogućava 
-                    lakšu prodaju. Zato vam preporučujemo da nas kontaktirate radi lakše kupovine. 
-                    
-                    Glavni kuvar je baka Ankica, a postoje i pomoćnici. Isprobavali smo razne recepte, ali je naš domaći recept ostao 
-                    najbolji.
-
-
-                    Kupujemo sremski sir i domaće mleko, koristimo med od naših rođaka sa Stare planine, biramo kvaliteno brašno. Na 
-                    Novom Beogradu jako brzo rasprodamo naše proizvode jer su postali traženi. 
-
-                </p>
-                <p>Svaki proizvod koji izlazi iz naše pekare nosi u sebi <strong>deo porodične tradicije</strong> i ljubavi prema pečenju. 
-                    Naša filozofija je jednostavna - koristimo samo <strong>najkvalitetnije sastojke</strong>, bez aditiva i konzervansa, 
-                    baš kao što su to radile naše bake.
-                </p>
-                <p>Danas, naš mali porodični biznis je prerastao u prepoznatljiv brend na teritoriji Beograda, ali i dalje 
-                    ostajemo verni našim <strong>tradicionalnim receptima</strong> i načinu pripreme. Svaka kiflica i štrudla se i 
-                    dalje pravi <strong>ručno</strong>, sa istom pažnjom i ljubavlju kao i prvog dana.
-                </p> -->
                 <p class="first-letter">
                     Priča o našim domaćim kiflicama i štrudlama počela je davno, toliko davno da se tačan trenutak zaboravio.  
                     Oduvek su bile deo naše kuhinje i <strong>srpske tradicije</strong>, a recept i umeće preneli su nam naši preci.  
@@ -305,11 +182,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                  </p>
 
 
-
             </div>
             <div class="story-image">
-                <!-- Image dimensions: 600x800 -->
-                <img loading="lazy" class="interactive-div" src="slike/domaca-hrana-domace-kiflice.jpg" width="600" height="500" alt="domace kiflice porodicna tradicija" title="Porodična tradicija">
+                <img loading="lazy" class="interactive-div" src="slike/domaca-hrana-domace-kiflice.webp" width="600" height="500" alt="domace kiflice porodicna tradicija" title="Porodična tradicija">
             </div>
         </div>
         <div class="jos-o-nama">
@@ -367,39 +242,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <!-- Team Section -->
-    <!-- <section class="team-section">
-        <div class="container">
-            <span class="subtitle">Ko smo mi</span>
-            <h2>Naš tim</h2>
-            
-            <div class="team-grid">
-                <div class="team-member"> -->
-                    <!-- Image dimensions: 300x300 -->
-                    <!-- <img loading="lazy" src="/placeholder.svg" alt="clan tima domace kiflice" title="Marija Petrović">
-                    <h3>Marija Petrović</h3>
-                    <p class="member-role">Osnivač & Glavni pekar</p>
-                    <p>Marija je nasledila recepte od svoje bake i već 25 godina vodi naš porodični biznis sa istom strašću i posvećenošću.</p>
-                </div>
-                
-                <div class="team-member"> -->
-                    <!-- Image dimensions: 300x300 -->
-                    <!-- <img loading="lazy" src="/placeholder.svg" alt="clan tima domace kiflice" title="Nikola Petrović">
-                    <h3>Nikola Petrović</h3>
-                    <p class="member-role">Menadžer & Dostava</p>
-                    <p>Nikola se brine da svaka porudžbina stigne na vreme i da naši kupci uvek budu zadovoljni uslugom.</p>
-                </div>
-                
-                <div class="team-member"> -->
-                    <!-- Image dimensions: 300x300 -->
-                    <!-- <img loading="lazy" src="/placeholder.svg" alt="clan tima domace kiflice" title="Ana Petrović">
-                    <h3>Ana Petrović</h3>
-                    <p class="member-role">Pekar & Kreativni direktor</p>
-                    <p>Ana je zadužena za razvoj novih recepata i održavanje visokog kvaliteta svih naših proizvoda.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
     
 
     <!-- Process Section -->
@@ -414,7 +256,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="step-content">
                         <h3>Odabir sastojaka</h3>
                         <p>Beremo voće i povrće iz naše bašte, kupujemo od domaćih malih proizvođaća i uvek biramo bolji kvalitet.</p>
-                        <!-- <p>Svaki dan počinjemo odabirom najsvežijih i najkvalitetnijih sastojaka od proverenih dobavljača.</p> -->
                     </div>
                 </div>
                 
@@ -460,15 +301,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             <div class="partners">
                 <a href="https://katarinaketering.com/" class="partner interactive-div" target="_blank" rel="noopener noreferrer">
-                    <!-- Image dimensions: 200x100 -->
                     <img loading="lazy" src="logos/katarina-ketering-logo.png" width="167" height="120" alt="Katarina ketering" title="Katarina ketering">
                 </a>
                 <a href="https://izrada-sajtova-rs.com/" class="partner interactive-div" target="_blank" rel="noopener noreferrer">
-                    <!-- Image dimensions: 200x100 -->
                     <img loading="lazy" src="logos/izrada-sajtova-rs.svg" width="1447" height="555" alt="Izrada web sajtova" title="Izrada web sajtova">
                 </a>
                 <a href="https://lavandabeograd.com/" class="partner interactive-div" target="_blank" rel="noopener noreferrer">
-                    <!-- Image dimensions: 200x100 -->
                     <img loading="lazy" src="logos/Lavanda.png" width="200" height="100" alt="Prodaja lavande" title="Prodaja lavande">
                 </a>
             </div>
@@ -518,7 +356,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Grobljanska 97, Ugrinovci<br>
                         Zemun, Beograd, 11277<br>
                         Tel: <a href="tel:+381600409622" class="trackcall">+381 60 0409 622</a><br>
-                        Email: <a href="mailto:bobann82@gmail.com">bobann82@gmail.com</a>
+                        Email: <a href="mailto:milovankan@gmail.com">milovankan@gmail.com</a>
                     </address>
                 </div>
             </div>
@@ -544,4 +382,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 </body>
 </html>
-
