@@ -509,6 +509,77 @@ section {
   margin-bottom: 3rem;
 }
 
+/* ===== PORTION TABLE (koliko kiflica za slavu) ===== */
+.portion-section {
+  padding: 5rem 0;
+  background-color: var(--background-color);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 2rem 0 1rem;
+}
+
+.portion-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  background-color: var(--card-background);
+  box-shadow: var(--box-shadow);
+}
+
+.portion-table caption {
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.portion-table th,
+.portion-table td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  font-size: clamp(0.845rem, 2vw, 1rem);
+}
+
+.portion-table thead th {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.portion-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.portion-table td:last-child {
+  color: var(--price-color);
+  font-weight: 700;
+  font-family: var(--heading-font);
+}
+
+.portion-note {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 576px) {
+  .portion-table {
+    min-width: 0;
+  }
+  .portion-table th,
+  .portion-table td {
+    padding: 0.6rem 0.45rem;
+    font-size: 0.8rem;
+  }
+}
+
+.order-steps .process-steps {
+  margin-top: 2rem;
+}
+
 /* ===== ABOUT SECTION ===== */
 .about-section {
   background-color: var(--card-background);

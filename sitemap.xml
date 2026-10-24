@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://domaca-hrana.com/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <image:image>
       <image:loc>https://domaca-hrana.com/slike/domace-kiflice.webp</image:loc>
       <image:title>Domaće kiflice i štrudle</image:title>
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://domaca-hrana.com/domace-kiflice.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <image:image>
       <image:loc>https://domaca-hrana.com/slike/domace-kiflice-novi-beograd-1.webp</image:loc>
       <image:title>Domaće kiflice sa susamom i semenkama</image:title>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://domaca-hrana.com/strudle-sa-makom.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <image:image>
       <image:loc>https://domaca-hrana.com/slike/strudla-sa-makom-2.webp</image:loc>
       <image:title>Štrudla sa makom</image:title>
@@ -35,7 +35,7 @@
   </url>
   <url>
     <loc>https://domaca-hrana.com/strudle-sa-orasima.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <image:image>
       <image:loc>https://domaca-hrana.com/slike/strudla-sa-orasima-1.webp</image:loc>
       <image:title>Štrudla sa orasima</image:title>
@@ -47,7 +47,7 @@
   </url>
   <url>
     <loc>https://domaca-hrana.com/cene.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <image:image>
       <image:loc>https://domaca-hrana.com/slike/domace-kiflice-cena.webp</image:loc>
       <image:title>Domaće kiflice – cenovnik</image:title>
@@ -55,7 +55,7 @@
   </url>
   <url>
     <loc>https://domaca-hrana.com/o-nama.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <image:image>
       <image:loc>https://domaca-hrana.com/slike/domace-kiflice-domace.webp</image:loc>
       <image:title>O nama</image:title>
@@ -63,14 +63,14 @@
   </url>
   <url>
     <loc>https://domaca-hrana.com/kontakt.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://domaca-hrana.com/politika-privatnosti.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
   <url>
     <loc>https://domaca-hrana.com/uslovi-koriscenja.html</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-21</lastmod>
   </url>
 </urlset>

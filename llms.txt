@@ -1,0 +1,91 @@
+# Domaće – domaće kiflice i štrudle, Beograd
+
+> Domaće (domaca-hrana.com) je porodična proizvodnja domaćih kiflica i štrudli iz Ugrinovaca (Zemun, Beograd). Sve se pravi ručno, po tradicionalnom porodičnom receptu, bez aditiva i konzervansa. Dostavljamo na teritoriji celog Beograda u roku od 24 sata, a subotom prodajemo na pijaci u Bloku 44 na Novom Beogradu.
+
+Ovaj fajl sažima najvažnije, proverene informacije sa sajta, za AI asistente i pretraživače. Sve cene su u dinarima (RSD) i važe za kilogram, osim ako nije drugačije navedeno.
+
+## Osnovni podaci
+
+- Naziv: Domaće (poznato i kao „Domaće kiflice i štrudle“)
+- Sajt: https://domaca-hrana.com/
+- Adresa: Grobljanska 97, Ugrinovci, Zemun, Beograd 11277, Srbija
+- Telefon: +381 60 0409 622
+- Email: milovankan@gmail.com
+- Radno vreme: ponedeljak–petak 08:00–20:00, subota 09:00–17:00, nedelja zatvoreno
+- Pijaca: svake subote na pijaci u Bloku 44 na Novom Beogradu (moguća kupovina manjih količina)
+- Glavni majstor u kuhinji: baka Ankica, uz pomoć porodice
+
+## Proizvodi i cene
+
+Domaće kiflice (oko 30 punjenih, odnosno oko 35 praznih kiflica u kilogramu):
+
+- Kiflice sa sirom – 1000 RSD/kg
+- Kiflice sa sirom i šunkom – 1200 RSD/kg
+- Kiflice sa kulenom – 1200 RSD/kg
+- Kiflice sa eurokremom – 1100 RSD/kg
+- Kiflice sa džemom od kajsija – 1000 RSD/kg
+- Prazne kiflice – 900 RSD/kg
+
+Štrudle sa makom (oko 2 štrudle u kilogramu):
+
+- Klasična štrudla sa makom – 900 RSD/kg
+- Štrudla sa makom i višnjama – 1000 RSD/kg
+- Posna štrudla sa makom (bez jaja i mlečnih proizvoda) – 900 RSD/kg
+
+Štrudle sa orasima (oko 2 štrudle u kilogramu):
+
+- Klasična štrudla sa orasima – 900 RSD/kg
+- Štrudla sa orasima i medom – 1000 RSD/kg
+- Posna štrudla sa orasima (bez jaja i mlečnih proizvoda) – 900 RSD/kg
+
+Paketi i popusti:
+
+- Porodični paket: 2 kg kiflica sa sirom + 2 kg štrudle po izboru – 3600 RSD
+- Slavski paket: 3 kg kiflica + 4 kg štrudli – 6200 RSD
+- Za porudžbine preko 10 kg: 15% popusta na ukupnu cenu
+
+Po porudžbini pravimo i torte, kolače i jela domaće kuhinje (cena po dogovoru).
+
+## Naručivanje, dostava i plaćanje
+
+- Naručivanje: telefonom (+381 60 0409 622) ili preko kontakt forme na https://domaca-hrana.com/kontakt.html
+- Rok: dovoljno je 24 sata unapred; za slave i porudžbine preko 5 kg 2–3 dana unapred
+- Minimalna porudžbina: 1000 RSD
+- Dostava: na teritoriji celog Beograda u roku od 24 sata; 600 RSD, a besplatna za porudžbine preko 2500 RSD
+- Plaćanje: gotovinom pri preuzimanju ili uplatom na račun (nema online plaćanja karticom)
+
+## Koliko kiflica za slavu
+
+Preporuka je 3–4 kiflice po gostu kada se kiflice služe uz ostalu hranu, odnosno 5–6 po osobi kada su glavno posluženje.
+
+| Broj gostiju | Broj kiflica | Količina | Okvirna cena (kiflice sa sirom) |
+|---|---|---|---|
+| 10 | 30–40 | 1–1,5 kg | 1000–1500 RSD |
+| 20 | 60–80 | 2–3 kg | 2000–3000 RSD |
+| 30 | 90–120 | 3–4 kg | 3000–4000 RSD |
+| 50 | 150–200 | 5–7 kg | 5000–7000 RSD |
+| 80 | 240–320 | 8–11 kg | 8000–11000 RSD |
+| 100 | 300–400 | 10–13,5 kg | 10000–13500 RSD |
+
+## Sastojci, alergeni i čuvanje
+
+- Kiflice: brašno, domaća jaja, domaće mleko, ulje, kvasac; punjenja od sremskog sira, šunke, kulena, domaćeg džema od kajsija ili eurokrema; posipaju se susamom i semenkama
+- Štrudle: sveže mleveni mak ili orasi koje sami meljemo, domaća jaja, domaće mleko, med sa Stare planine, kvalitetno brašno
+- Bez aditiva i konzervansa
+- Alergeni: proizvodi mogu sadržati gluten, jaja, mleko, orašaste plodove, susam i mak
+- Čuvanje: najbolje u roku od 2–3 dana od pečenja, na sobnoj temperaturi u zatvorenoj posudi; kiflice se jedu sveže i ne preporučuje se zamrzavanje, dok se štrudle mogu zamrznuti
+
+## Stranice
+
+- [Početna](https://domaca-hrana.com/): pregled ponude, kako naručiti, dostava i česta pitanja
+- [Domaće kiflice](https://domaca-hrana.com/domace-kiflice.html): vrste i cene kiflica, tabela „koliko kiflica za slavu“, sastojci i česta pitanja
+- [Štrudle sa makom](https://domaca-hrana.com/strudle-sa-makom.html): vrste, cene, sastojci i česta pitanja
+- [Štrudle sa orasima](https://domaca-hrana.com/strudle-sa-orasima.html): vrste, cene, sastojci i česta pitanja
+- [Cene](https://domaca-hrana.com/cene.html): kompletan cenovnik, paketi, popusti i uslovi dostave
+- [O nama](https://domaca-hrana.com/o-nama.html): porodična priča, način pripreme, kolači i domaća jela po porudžbini
+- [Kontakt](https://domaca-hrana.com/kontakt.html): telefon, email, adresa, radno vreme, kontakt forma i mapa
+
+## Opciono
+
+- [Uslovi korišćenja](https://domaca-hrana.com/uslovi-koriscenja.html): naručivanje, plaćanje, dostava, reklamacije i alergeni
+- [Politika privatnosti](https://domaca-hrana.com/politika-privatnosti.html): kako postupamo sa ličnim podacima
