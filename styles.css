@@ -42,6 +42,9 @@
 
   /* Container Width */
   --container-width: 1200px;
+
+  /* Visina fiksnog menija (hero tekst se centrira u prostoru ispod njega) */
+  --header-height: 82px;
 }
 
 /* ===== RESET & BASE STYLES ===== */
@@ -122,6 +125,7 @@ h6 {
 
 h1 {
   font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
   background: linear-gradient(to right, rgb(83, 56, 20), #6e3b1d, #9c5a30);
   -webkit-background-clip: text;
   background-clip: text;
@@ -279,13 +283,17 @@ section {
 /* ===== HERO SECTION ===== */
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 50vh;
   display: flex;
-  align-items: center;
+  align-items: center; /* tekst je centriran po visini, a poravnat levo */
+  /* gore se dodaje visina fiksnog menija, pa je tekst centriran u vidljivom delu ispod menija */
+  padding: calc(var(--header-height) + 2.5rem) 0 2.5rem;
   overflow: hidden;
   border-bottom: 3px solid var(--primary-color);
 }
 .hero-index {
+  min-height: 100vh;
+  min-height: 100svh;
   border-bottom: none;
 }
 .hero-content {
@@ -1321,12 +1329,6 @@ section {
 }
 
 @media (max-width: 992px) {
-  .hero {
-    height: 60vh;
-  }
-  .hero-index {
-    height: 100vh;
-  }
   .hamburger {
     display: block;
   }
@@ -1361,6 +1363,10 @@ section {
 
 @media (max-width: 768px) {
   
+  :root {
+    --header-height: 70px;
+  }
+
   .logo a {
     font-size: 1.6rem;
   }
